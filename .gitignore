@@ -1,0 +1,33 @@
+# ─────────────────────────────────────────────────────────────
+# Material DOCENTE — no se publica en el repo de los alumnos
+# ─────────────────────────────────────────────────────────────
+Guion_Clase_*.md
+Deck_Outline_Clase_*.md
+Analitico_PAD.md
+Fintech_PAD_Programa.md
+CLAUDE.md
+
+# Soluciones — descomentar el ignore hasta después del examen.
+# Para publicarlas al cierre del curso, borrá esta línea y hacé commit.
+Soluciones_Clase_*.ipynb
+
+# Examen — la clave nunca va al repo público
+Clase 6/examen/Clave_*
+Clase 6/examen/*GIFT*
+
+# ─────────────────────────────────────────────────────────────
+# Datasets duplicados por clase — la fuente única es /datasets.
+# Los archivos locales quedan intactos, sólo no se publican.
+# ─────────────────────────────────────────────────────────────
+Clase */data/
+
+# ─────────────────────────────────────────────────────────────
+# Ruido del sistema y del editor
+# ─────────────────────────────────────────────────────────────
+.DS_Store
+.obsidian/
+.claude/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.venv/

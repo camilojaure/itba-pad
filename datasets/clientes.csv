@@ -1,0 +1,1001 @@
+cliente_id,nombre,edad,provincia,segmento,antiguedad_años,balance_ars,cant_productos,cliente_activo,churn
+C0001,Cliente 1,56,Buenos Aires,Retail,3.6,475800.0,3,1,1
+C0002,Cliente 2,69,CABA,Premium,9.0,3479000.0,4,0,0
+C0003,Cliente 3,46,CABA,Retail,3.5,2800.0,1,1,0
+C0004,Cliente 4,32,Buenos Aires,Premium,2.5,848400.0,3,0,0
+C0005,Cliente 5,60,CABA,Premium,1.7,74200.0,2,1,0
+C0006,Cliente 6,25,Córdoba,Retail,11.3,199000.0,2,1,0
+C0007,Cliente 7,38,CABA,Retail,0.3,383600.0,2,0,0
+C0008,Cliente 8,56,Buenos Aires,Retail,10.7,16100.0,4,1,0
+C0009,Cliente 9,36,CABA,Retail,7.0,3700.0,2,1,0
+C0010,Cliente 10,40,Buenos Aires,Retail,0.6,209600.0,5,1,0
+C0011,Cliente 11,28,Mendoza,Retail,3.3,73400.0,1,0,0
+C0012,Cliente 12,28,Buenos Aires,Joven,8.1,4900.0,4,1,1
+C0013,Cliente 13,41,Córdoba,Retail,3.4,2661400.0,2,1,0
+C0014,Cliente 14,70,Rosario,Retail,9.5,152800.0,1,1,0
+C0015,Cliente 15,53,CABA,Premium,11.5,572600.0,3,1,0
+C0016,Cliente 16,57,Tucumán,Retail,2.2,464500.0,2,1,0
+C0017,Cliente 17,41,Buenos Aires,Joven,1.9,25100.0,1,1,0
+C0018,Cliente 18,20,Santa Fe,Premium,11.0,254800.0,5,1,0
+C0019,Cliente 19,39,CABA,PyME,4.5,8300.0,3,0,1
+C0020,Cliente 20,70,Santa Fe,Retail,0.5,24100.0,5,1,0
+C0021,Cliente 21,19,Buenos Aires,Retail,0.2,106800.0,1,1,0
+C0022,Cliente 22,41,Buenos Aires,Retail,3.3,4900.0,5,1,0
+C0023,Cliente 23,61,Buenos Aires,PyME,10.6,23100.0,1,1,0
+C0024,Cliente 24,47,Córdoba,Retail,7.4,14900.0,1,0,0
+C0025,Cliente 25,55,Mendoza,Retail,4.5,74100.0,5,1,0
+C0026,Cliente 26,19,Santa Fe,Joven,0.6,141800.0,1,1,0
+C0027,Cliente 27,38,Buenos Aires,Retail,1.2,182300.0,2,1,0
+C0028,Cliente 28,50,Mendoza,Retail,8.3,267900.0,1,1,0
+C0029,Cliente 29,29,CABA,Retail,0.8,468900.0,4,1,0
+C0030,Cliente 30,39,CABA,Joven,1.3,148900.0,1,1,0
+C0031,Cliente 31,61,Buenos Aires,Retail,0.6,1015600.0,4,1,0
+C0032,Cliente 32,42,Santa Fe,PyME,4.5,71600.0,1,1,0
+C0033,Cliente 33,66,Buenos Aires,PyME,11.5,46200.0,1,1,0
+C0034,Cliente 34,44,Córdoba,Retail,1.3,148900.0,5,1,0
+C0035,Cliente 35,59,Mendoza,Premium,2.6,151550.0,2,0,0
+C0036,Cliente 36,45,Buenos Aires,Retail,4.0,964000.0,2,1,0
+C0037,Cliente 37,33,CABA,Retail,20.0,326600.0,3,1,0
+C0038,Cliente 38,32,Buenos Aires,PyME,0.4,184500.0,5,1,0
+C0039,Cliente 39,64,CABA,PyME,2.8,72900.0,5,1,0
+C0040,Cliente 40,68,CABA,Premium,1.9,113750.0,2,1,0
+C0041,Cliente 41,61,CABA,Premium,8.0,599900.0,5,0,0
+C0042,Cliente 42,69,Córdoba,Retail,2.6,11000.0,2,1,0
+C0043,Cliente 43,20,CABA,Retail,0.5,598100.0,5,0,1
+C0044,Cliente 44,54,Córdoba,Retail,4.0,45900.0,1,1,0
+C0045,Cliente 45,68,Santa Fe,Retail,5.9,94600.0,2,1,0
+C0046,Cliente 46,24,Córdoba,Retail,0.0,15300.0,2,0,1
+C0047,Cliente 47,38,Córdoba,Retail,7.8,177100.0,4,1,0
+C0048,Cliente 48,26,Córdoba,Retail,0.8,30300.0,5,0,0
+C0049,Cliente 49,56,CABA,Retail,3.2,158600.0,5,1,0
+C0050,Cliente 50,35,CABA,Premium,2.2,652750.0,2,0,1
+C0051,Cliente 51,21,Mendoza,PyME,5.1,22700.0,1,1,1
+C0052,Cliente 52,42,Córdoba,Retail,1.9,11100.0,1,1,0
+C0053,Cliente 53,31,Buenos Aires,Joven,8.2,595900.0,1,1,0
+C0054,Cliente 54,67,CABA,PyME,5.2,44900.0,5,1,0
+C0055,Cliente 55,26,CABA,Retail,4.2,83900.0,4,1,0
+C0056,Cliente 56,43,Tucumán,PyME,6.4,124000.0,2,1,0
+C0057,Cliente 57,70,Buenos Aires,Premium,5.6,31850.0,3,1,0
+C0058,Cliente 58,19,Buenos Aires,Premium,0.1,419650.0,4,1,0
+C0059,Cliente 59,37,CABA,Retail,2.0,69500.0,3,0,1
+C0060,Cliente 60,45,CABA,Premium,10.7,79800.0,4,1,0
+C0061,Cliente 61,64,Mendoza,Retail,0.5,10600.0,1,1,0
+C0062,Cliente 62,24,Buenos Aires,Premium,5.3,520100.0,5,1,0
+C0063,Cliente 63,61,Santa Fe,Premium,14.7,1137500.0,3,1,0
+C0064,Cliente 64,25,Buenos Aires,Premium,0.2,274050.0,4,1,0
+C0065,Cliente 65,64,Mendoza,Premium,4.6,24500.0,5,1,1
+C0066,Cliente 66,52,Buenos Aires,PyME,2.5,12300.0,3,0,0
+C0067,Cliente 67,31,Buenos Aires,Retail,3.5,31300.0,2,0,0
+C0068,Cliente 68,34,Córdoba,Retail,0.4,625900.0,4,1,0
+C0069,Cliente 69,53,Rosario,PyME,0.2,41400.0,2,1,1
+C0070,Cliente 70,67,Mendoza,Retail,4.4,29600.0,1,1,0
+C0071,Cliente 71,57,Córdoba,Retail,6.9,4900.0,2,1,0
+C0072,Cliente 72,21,Tucumán,Retail,6.1,22400.0,2,1,0
+C0073,Cliente 73,19,Buenos Aires,Retail,3.1,9400.0,4,1,1
+C0074,Cliente 74,23,Rosario,Joven,0.4,13300.0,1,1,0
+C0075,Cliente 75,71,CABA,Premium,4.7,250950.0,2,1,0
+C0076,Cliente 76,59,Santa Fe,Joven,1.1,32800.0,5,1,1
+C0077,Cliente 77,21,Mendoza,Premium,9.7,2681700.0,3,0,0
+C0078,Cliente 78,71,Santa Fe,Retail,7.3,301600.0,2,1,0
+C0079,Cliente 79,46,CABA,Retail,4.9,24000.0,1,0,0
+C0080,Cliente 80,35,CABA,Premium,11.9,52850.0,2,0,1
+C0081,Cliente 81,43,Mendoza,Retail,0.1,476400.0,3,1,0
+C0082,Cliente 82,61,Buenos Aires,PyME,5.3,722200.0,1,1,1
+C0083,Cliente 83,51,Rosario,PyME,1.6,2200.0,4,1,0
+C0084,Cliente 84,27,Santa Fe,Retail,9.5,68800.0,1,0,0
+C0085,Cliente 85,53,Buenos Aires,Joven,1.2,41000.0,4,0,1
+C0086,Cliente 86,31,Santa Fe,PyME,5.2,158500.0,1,1,0
+C0087,Cliente 87,48,CABA,Premium,8.4,3862250.0,3,1,0
+C0088,Cliente 88,65,Santa Fe,Retail,0.2,29000.0,3,0,0
+C0089,Cliente 89,32,Santa Fe,Retail,2.0,2700.0,1,1,0
+C0090,Cliente 90,25,Buenos Aires,Premium,5.7,499450.0,2,0,0
+C0091,Cliente 91,31,CABA,Retail,2.4,481600.0,3,0,0
+C0092,Cliente 92,40,Tucumán,Retail,1.2,38000.0,4,1,0
+C0093,Cliente 93,57,CABA,PyME,1.0,20800.0,4,1,1
+C0094,Cliente 94,38,Córdoba,Retail,0.6,31100.0,5,1,0
+C0095,Cliente 95,33,CABA,Premium,7.8,750050.0,4,1,1
+C0096,Cliente 96,62,CABA,Joven,3.4,30300.0,5,1,0
+C0097,Cliente 97,35,CABA,PyME,0.3,98000.0,1,1,0
+C0098,Cliente 98,64,CABA,Retail,1.9,62400.0,1,0,0
+C0099,Cliente 99,70,Buenos Aires,PyME,1.8,53500.0,1,0,0
+C0100,Cliente 100,41,Córdoba,Retail,0.8,171400.0,2,1,0
+C0101,Cliente 101,43,Buenos Aires,Retail,2.3,29200.0,2,0,0
+C0102,Cliente 102,42,Buenos Aires,Premium,1.6,109900.0,5,1,1
+C0103,Cliente 103,62,Buenos Aires,Retail,1.7,198100.0,4,1,1
+C0104,Cliente 104,58,Buenos Aires,Retail,5.4,13600.0,4,1,0
+C0105,Cliente 105,46,CABA,Premium,1.0,56000.0,1,1,1
+C0106,Cliente 106,32,Córdoba,Retail,4.1,9000.0,3,0,0
+C0107,Cliente 107,62,Santa Fe,Retail,3.4,214000.0,2,1,0
+C0108,Cliente 108,18,Buenos Aires,Retail,3.4,51100.0,2,1,1
+C0109,Cliente 109,42,Mendoza,PyME,4.4,8300.0,1,1,0
+C0110,Cliente 110,24,Santa Fe,Premium,3.2,754250.0,2,1,0
+C0111,Cliente 111,26,CABA,Retail,8.5,26000.0,1,1,0
+C0112,Cliente 112,41,Tucumán,Retail,4.5,16200.0,5,1,0
+C0113,Cliente 113,18,Rosario,Retail,3.2,44600.0,4,1,0
+C0114,Cliente 114,61,Buenos Aires,Retail,7.1,550200.0,3,1,0
+C0115,Cliente 115,25,CABA,PyME,3.7,33100.0,4,0,1
+C0116,Cliente 116,41,Tucumán,Retail,1.4,141900.0,4,1,0
+C0117,Cliente 117,28,Santa Fe,Retail,0.9,178200.0,5,1,0
+C0118,Cliente 118,68,Buenos Aires,Premium,0.7,407400.0,2,1,0
+C0119,Cliente 119,34,Santa Fe,Premium,9.2,1410500.0,3,1,0
+C0120,Cliente 120,25,Mendoza,Premium,5.0,72450.0,2,1,0
+C0121,Cliente 121,52,Santa Fe,Retail,11.1,12500.0,4,1,0
+C0122,Cliente 122,52,Santa Fe,Retail,3.7,12200.0,1,0,1
+C0123,Cliente 123,50,Mendoza,Retail,2.6,48200.0,4,1,1
+C0124,Cliente 124,22,Buenos Aires,Retail,0.2,14500.0,2,0,0
+C0125,Cliente 125,59,Buenos Aires,Premium,4.5,261450.0,4,0,1
+C0126,Cliente 126,56,Córdoba,PyME,3.5,67200.0,1,1,0
+C0127,Cliente 127,58,Tucumán,PyME,18.5,275900.0,5,1,1
+C0128,Cliente 128,45,CABA,PyME,1.1,92700.0,2,1,0
+C0129,Cliente 129,24,Córdoba,Retail,3.0,32100.0,4,0,0
+C0130,Cliente 130,26,Córdoba,Premium,4.2,388150.0,2,0,0
+C0131,Cliente 131,25,CABA,Retail,4.1,12800.0,5,1,0
+C0132,Cliente 132,29,Santa Fe,Premium,3.3,197750.0,4,0,0
+C0133,Cliente 133,51,Mendoza,Retail,6.0,96700.0,4,1,1
+C0134,Cliente 134,50,Córdoba,Retail,0.9,72700.0,2,0,0
+C0135,Cliente 135,65,CABA,Retail,5.2,111600.0,2,0,0
+C0136,Cliente 136,40,CABA,Joven,3.9,22800.0,1,1,0
+C0137,Cliente 137,41,Córdoba,Retail,9.1,337100.0,5,1,0
+C0138,Cliente 138,54,CABA,Retail,7.5,921000.0,1,1,0
+C0139,Cliente 139,52,CABA,Retail,1.5,5400.0,4,1,0
+C0140,Cliente 140,61,CABA,PyME,1.3,9700.0,2,0,0
+C0141,Cliente 141,57,Buenos Aires,Premium,16.0,223650.0,4,1,0
+C0142,Cliente 142,39,Buenos Aires,Premium,3.0,142450.0,4,1,0
+C0143,Cliente 143,44,CABA,Retail,9.5,1029500.0,3,1,0
+C0144,Cliente 144,52,CABA,Premium,0.7,291550.0,3,0,0
+C0145,Cliente 145,18,CABA,Retail,4.1,483500.0,4,1,0
+C0146,Cliente 146,52,Santa Fe,PyME,6.6,2800.0,2,1,0
+C0147,Cliente 147,54,Córdoba,Premium,11.8,710850.0,4,1,0
+C0148,Cliente 148,64,Buenos Aires,Retail,1.6,20500.0,3,0,0
+C0149,Cliente 149,31,Mendoza,Retail,5.2,20000.0,2,0,0
+C0150,Cliente 150,20,CABA,Retail,3.1,41300.0,4,1,0
+C0151,Cliente 151,18,Santa Fe,Retail,0.3,7100.0,5,1,0
+C0152,Cliente 152,22,Córdoba,Retail,4.7,116300.0,5,1,0
+C0153,Cliente 153,43,Rosario,Premium,4.7,278950.0,4,1,0
+C0154,Cliente 154,31,Santa Fe,Retail,10.7,89300.0,2,1,1
+C0155,Cliente 155,56,Santa Fe,Retail,2.8,226500.0,4,0,1
+C0156,Cliente 156,44,Santa Fe,Retail,1.0,580800.0,4,1,0
+C0157,Cliente 157,26,Buenos Aires,Retail,0.2,34700.0,3,0,0
+C0158,Cliente 158,32,Buenos Aires,PyME,2.1,122500.0,5,1,0
+C0159,Cliente 159,32,Santa Fe,Retail,1.4,92900.0,3,1,1
+C0160,Cliente 160,43,CABA,Premium,5.7,369250.0,3,1,1
+C0161,Cliente 161,59,Santa Fe,PyME,1.7,107900.0,4,1,0
+C0162,Cliente 162,30,Buenos Aires,Premium,11.9,2277450.0,3,1,0
+C0163,Cliente 163,68,CABA,PyME,13.1,30000.0,5,1,0
+C0164,Cliente 164,49,CABA,Retail,3.9,6100.0,3,1,0
+C0165,Cliente 165,56,CABA,Joven,10.6,21000.0,5,1,0
+C0166,Cliente 166,66,Córdoba,Retail,5.7,186400.0,3,1,0
+C0167,Cliente 167,69,CABA,Retail,3.2,62000.0,5,0,1
+C0168,Cliente 168,49,CABA,Premium,0.8,103950.0,3,1,0
+C0169,Cliente 169,21,CABA,Joven,2.5,11900.0,3,0,0
+C0170,Cliente 170,47,CABA,PyME,3.3,83400.0,2,1,1
+C0171,Cliente 171,54,Santa Fe,Retail,8.0,157400.0,5,0,1
+C0172,Cliente 172,40,Buenos Aires,Retail,2.6,94700.0,5,1,0
+C0173,Cliente 173,56,Córdoba,Joven,9.1,40900.0,5,0,0
+C0174,Cliente 174,62,Córdoba,Retail,4.5,74600.0,1,1,0
+C0175,Cliente 175,32,Santa Fe,PyME,0.6,74000.0,3,1,0
+C0176,Cliente 176,60,Córdoba,PyME,20.0,79600.0,5,1,1
+C0177,Cliente 177,46,Mendoza,Retail,3.0,10100.0,1,1,1
+C0178,Cliente 178,53,Rosario,Retail,2.0,80500.0,2,1,0
+C0179,Cliente 179,30,CABA,Retail,4.3,30900.0,5,1,0
+C0180,Cliente 180,49,Buenos Aires,Retail,0.5,285200.0,5,1,0
+C0181,Cliente 181,24,CABA,PyME,4.0,73100.0,1,0,1
+C0182,Cliente 182,68,Buenos Aires,Retail,2.8,209700.0,3,1,0
+C0183,Cliente 183,39,Córdoba,PyME,2.1,38100.0,2,1,0
+C0184,Cliente 184,45,Tucumán,Retail,12.2,40200.0,5,1,0
+C0185,Cliente 185,19,Buenos Aires,Joven,3.0,563200.0,3,1,0
+C0186,Cliente 186,59,Buenos Aires,Retail,1.0,115200.0,2,1,0
+C0187,Cliente 187,62,Buenos Aires,Retail,2.5,20500.0,4,1,0
+C0188,Cliente 188,70,Santa Fe,Retail,10.1,229900.0,4,0,1
+C0189,Cliente 189,23,Córdoba,PyME,0.8,26900.0,2,0,1
+C0190,Cliente 190,45,Buenos Aires,Premium,1.0,294000.0,1,0,0
+C0191,Cliente 191,45,Tucumán,PyME,0.1,941300.0,2,1,0
+C0192,Cliente 192,61,Santa Fe,Retail,0.1,7000.0,2,1,0
+C0193,Cliente 193,61,Buenos Aires,Retail,7.1,46000.0,1,1,0
+C0194,Cliente 194,37,Córdoba,Premium,5.3,386750.0,1,1,0
+C0195,Cliente 195,47,Santa Fe,Retail,1.8,188500.0,3,1,1
+C0196,Cliente 196,28,CABA,Retail,4.8,9300.0,3,1,0
+C0197,Cliente 197,45,Buenos Aires,Joven,2.0,6000.0,1,1,0
+C0198,Cliente 198,42,Buenos Aires,Joven,12.2,307500.0,4,1,1
+C0199,Cliente 199,56,Buenos Aires,Joven,13.7,20300.0,4,1,1
+C0200,Cliente 200,50,Mendoza,PyME,2.0,19100.0,2,1,0
+C0201,Cliente 201,18,Tucumán,Retail,7.7,612500.0,5,1,0
+C0202,Cliente 202,44,Buenos Aires,Retail,5.9,66500.0,2,1,0
+C0203,Cliente 203,69,Buenos Aires,Premium,1.5,234850.0,2,1,0
+C0204,Cliente 204,30,Buenos Aires,PyME,1.1,45700.0,5,1,0
+C0205,Cliente 205,58,Buenos Aires,Retail,2.5,9500.0,1,0,0
+C0206,Cliente 206,20,Mendoza,Retail,6.1,165000.0,4,1,1
+C0207,Cliente 207,56,CABA,Retail,12.9,110700.0,2,1,0
+C0208,Cliente 208,23,CABA,Premium,5.8,269850.0,5,1,0
+C0209,Cliente 209,25,Buenos Aires,PyME,7.7,50300.0,3,1,0
+C0210,Cliente 210,44,Córdoba,PyME,3.7,38600.0,2,0,0
+C0211,Cliente 211,26,CABA,Retail,7.2,235300.0,4,1,1
+C0212,Cliente 212,54,Santa Fe,Joven,6.1,48400.0,1,1,0
+C0213,Cliente 213,50,Buenos Aires,Premium,1.9,190400.0,2,0,0
+C0214,Cliente 214,68,Santa Fe,Retail,3.2,132600.0,2,1,0
+C0215,Cliente 215,59,Córdoba,Retail,6.5,81800.0,5,1,0
+C0216,Cliente 216,61,Buenos Aires,Retail,0.2,703200.0,3,1,0
+C0217,Cliente 217,41,CABA,Retail,6.6,4300.0,3,1,0
+C0218,Cliente 218,32,Mendoza,Joven,0.8,93900.0,1,1,0
+C0219,Cliente 219,71,Tucumán,Retail,2.9,20800.0,4,1,0
+C0220,Cliente 220,49,CABA,PyME,6.6,14600.0,1,0,0
+C0221,Cliente 221,49,CABA,Retail,1.2,30200.0,2,1,1
+C0222,Cliente 222,41,Tucumán,Retail,1.1,65000.0,2,1,1
+C0223,Cliente 223,58,Córdoba,Retail,2.1,69500.0,3,1,0
+C0224,Cliente 224,69,Buenos Aires,Retail,9.0,6100.0,4,0,0
+C0225,Cliente 225,66,Tucumán,Retail,0.0,26600.0,5,0,0
+C0226,Cliente 226,66,Buenos Aires,Joven,9.3,91300.0,4,1,0
+C0227,Cliente 227,69,Córdoba,Premium,0.7,56350.0,2,1,0
+C0228,Cliente 228,29,Buenos Aires,Premium,18.5,39200.0,5,1,1
+C0229,Cliente 229,56,Buenos Aires,Retail,12.4,2000.0,4,1,1
+C0230,Cliente 230,19,CABA,Retail,2.7,22100.0,4,1,0
+C0231,Cliente 231,20,Santa Fe,Retail,2.9,10700.0,5,1,0
+C0232,Cliente 232,66,Buenos Aires,Premium,2.6,47950.0,2,1,1
+C0233,Cliente 233,54,Buenos Aires,Retail,4.0,39800.0,4,0,0
+C0234,Cliente 234,66,Buenos Aires,Retail,0.4,24300.0,5,1,0
+C0235,Cliente 235,34,CABA,Premium,0.1,36400.0,2,0,0
+C0236,Cliente 236,66,Rosario,Retail,0.2,2500.0,5,1,0
+C0237,Cliente 237,19,CABA,Retail,2.4,94200.0,5,1,0
+C0238,Cliente 238,19,Córdoba,Retail,1.3,185200.0,4,1,0
+C0239,Cliente 239,45,Mendoza,Joven,3.9,33000.0,2,1,0
+C0240,Cliente 240,71,CABA,Premium,19.5,140700.0,4,1,0
+C0241,Cliente 241,40,Buenos Aires,Retail,2.0,60100.0,1,1,0
+C0242,Cliente 242,54,Buenos Aires,Retail,3.4,639300.0,1,1,0
+C0243,Cliente 243,49,CABA,Joven,2.1,5700.0,2,1,0
+C0244,Cliente 244,50,CABA,Premium,7.5,112700.0,5,1,0
+C0245,Cliente 245,18,CABA,Retail,9.3,4500.0,4,1,1
+C0246,Cliente 246,36,Santa Fe,PyME,8.4,103100.0,4,1,0
+C0247,Cliente 247,19,CABA,Retail,14.7,48200.0,2,1,0
+C0248,Cliente 248,70,CABA,Premium,0.1,284200.0,2,0,1
+C0249,Cliente 249,61,Córdoba,Premium,7.3,263550.0,1,1,0
+C0250,Cliente 250,43,CABA,Retail,5.6,264600.0,3,1,0
+C0251,Cliente 251,49,Mendoza,Joven,1.0,134200.0,2,1,0
+C0252,Cliente 252,23,Córdoba,PyME,12.5,208100.0,3,1,0
+C0253,Cliente 253,49,Buenos Aires,Premium,0.6,42350.0,2,0,0
+C0254,Cliente 254,21,Santa Fe,Retail,4.6,358500.0,5,1,1
+C0255,Cliente 255,28,CABA,Retail,1.0,20300.0,5,1,0
+C0256,Cliente 256,34,CABA,Retail,2.3,22100.0,1,1,0
+C0257,Cliente 257,55,CABA,PyME,5.1,89900.0,1,1,1
+C0258,Cliente 258,41,CABA,Retail,3.3,94200.0,3,0,0
+C0259,Cliente 259,22,Santa Fe,Premium,2.2,42000.0,2,1,0
+C0260,Cliente 260,69,Buenos Aires,PyME,1.6,46200.0,4,1,0
+C0261,Cliente 261,51,CABA,Retail,7.3,558100.0,1,1,0
+C0262,Cliente 262,23,Buenos Aires,Premium,0.6,23100.0,4,1,0
+C0263,Cliente 263,39,Santa Fe,Retail,2.2,555600.0,4,1,0
+C0264,Cliente 264,28,Buenos Aires,Joven,9.4,41700.0,2,1,0
+C0265,Cliente 265,65,Mendoza,Retail,7.5,1800.0,3,1,0
+C0266,Cliente 266,33,CABA,Retail,2.0,7700.0,2,0,0
+C0267,Cliente 267,50,Santa Fe,Retail,5.8,14100.0,1,1,0
+C0268,Cliente 268,26,Rosario,Retail,6.9,23500.0,4,1,0
+C0269,Cliente 269,23,Mendoza,PyME,8.8,51200.0,2,1,0
+C0270,Cliente 270,33,Mendoza,PyME,3.1,1000.0,2,0,0
+C0271,Cliente 271,46,CABA,Premium,0.9,277200.0,2,1,1
+C0272,Cliente 272,20,Córdoba,Retail,1.2,12300.0,1,1,0
+C0273,Cliente 273,37,Buenos Aires,Retail,1.4,482000.0,3,1,0
+C0274,Cliente 274,53,Buenos Aires,Retail,3.6,39900.0,2,1,0
+C0275,Cliente 275,36,CABA,Premium,0.1,862050.0,1,1,0
+C0276,Cliente 276,43,Córdoba,PyME,4.0,316600.0,4,1,0
+C0277,Cliente 277,20,CABA,Retail,1.8,304000.0,5,1,0
+C0278,Cliente 278,36,Córdoba,Retail,1.4,25600.0,1,1,1
+C0279,Cliente 279,37,Mendoza,Premium,8.5,87850.0,5,1,0
+C0280,Cliente 280,49,Córdoba,PyME,2.5,42700.0,2,0,0
+C0281,Cliente 281,24,Santa Fe,PyME,0.4,155500.0,2,0,0
+C0282,Cliente 282,69,Santa Fe,PyME,7.0,27800.0,1,1,0
+C0283,Cliente 283,58,Rosario,Retail,0.2,50100.0,5,1,0
+C0284,Cliente 284,50,Córdoba,Retail,5.2,90300.0,2,1,0
+C0285,Cliente 285,57,Santa Fe,PyME,5.9,15400.0,4,1,1
+C0286,Cliente 286,56,Rosario,Premium,1.7,49000.0,3,0,0
+C0287,Cliente 287,35,Tucumán,Retail,7.0,47200.0,3,1,0
+C0288,Cliente 288,57,Buenos Aires,PyME,2.9,57600.0,2,1,0
+C0289,Cliente 289,18,CABA,PyME,2.5,114800.0,5,0,0
+C0290,Cliente 290,28,CABA,Premium,0.2,574000.0,2,1,0
+C0291,Cliente 291,45,Buenos Aires,Premium,1.4,40250.0,5,1,0
+C0292,Cliente 292,42,Córdoba,Retail,10.7,17700.0,4,1,0
+C0293,Cliente 293,67,Santa Fe,Premium,2.0,49000.0,5,1,0
+C0294,Cliente 294,40,Mendoza,Premium,3.2,1743700.0,2,1,0
+C0295,Cliente 295,48,Buenos Aires,PyME,3.0,50000.0,4,1,0
+C0296,Cliente 296,47,Mendoza,PyME,3.6,61300.0,1,0,1
+C0297,Cliente 297,59,Córdoba,PyME,0.3,65300.0,3,1,0
+C0298,Cliente 298,52,Santa Fe,Retail,1.8,20500.0,2,0,0
+C0299,Cliente 299,24,Tucumán,PyME,5.1,625600.0,2,1,1
+C0300,Cliente 300,33,Córdoba,PyME,0.9,110900.0,2,1,0
+C0301,Cliente 301,43,CABA,Premium,0.9,222250.0,4,1,0
+C0302,Cliente 302,65,Mendoza,PyME,0.0,11400.0,1,0,0
+C0303,Cliente 303,69,CABA,PyME,2.3,10500.0,5,0,1
+C0304,Cliente 304,66,Buenos Aires,Retail,8.6,37700.0,1,1,0
+C0305,Cliente 305,19,Mendoza,Premium,0.2,73500.0,4,0,0
+C0306,Cliente 306,18,CABA,Retail,0.8,12100.0,2,0,0
+C0307,Cliente 307,65,Santa Fe,Retail,1.5,34300.0,3,0,0
+C0308,Cliente 308,29,CABA,Premium,5.3,151550.0,2,1,0
+C0309,Cliente 309,22,Mendoza,PyME,4.1,74100.0,5,0,0
+C0310,Cliente 310,54,Buenos Aires,Retail,2.2,28100.0,3,0,0
+C0311,Cliente 311,49,Rosario,Retail,5.7,13200.0,2,1,0
+C0312,Cliente 312,26,Santa Fe,Premium,3.8,48650.0,3,0,0
+C0313,Cliente 313,58,Buenos Aires,Retail,9.1,369300.0,1,1,0
+C0314,Cliente 314,52,Córdoba,Retail,6.8,9200.0,4,1,1
+C0315,Cliente 315,36,Rosario,Retail,1.2,103200.0,2,1,0
+C0316,Cliente 316,65,CABA,Retail,1.3,130500.0,5,1,0
+C0317,Cliente 317,33,Buenos Aires,Retail,0.5,49900.0,1,1,0
+C0318,Cliente 318,20,CABA,Retail,1.6,848900.0,2,1,0
+C0319,Cliente 319,37,CABA,Retail,20.0,127100.0,1,0,1
+C0320,Cliente 320,41,Santa Fe,PyME,2.1,950100.0,5,1,1
+C0321,Cliente 321,71,Córdoba,Premium,1.0,78750.0,2,1,1
+C0322,Cliente 322,50,CABA,PyME,5.8,23100.0,5,1,0
+C0323,Cliente 323,41,Buenos Aires,Retail,3.1,132100.0,3,1,0
+C0324,Cliente 324,69,Córdoba,Retail,0.6,40400.0,5,0,0
+C0325,Cliente 325,28,CABA,PyME,1.9,750500.0,3,1,0
+C0326,Cliente 326,66,Buenos Aires,Retail,2.1,100000.0,2,0,0
+C0327,Cliente 327,25,Tucumán,Retail,5.6,12500.0,3,1,1
+C0328,Cliente 328,53,Córdoba,Premium,0.1,15400.0,2,1,0
+C0329,Cliente 329,55,Córdoba,Premium,1.3,186200.0,2,1,0
+C0330,Cliente 330,57,Mendoza,Retail,2.9,52400.0,4,1,0
+C0331,Cliente 331,37,CABA,Retail,1.3,95900.0,2,1,1
+C0332,Cliente 332,52,Santa Fe,Premium,4.0,1288350.0,3,1,0
+C0333,Cliente 333,65,CABA,Retail,2.6,302100.0,4,1,0
+C0334,Cliente 334,42,Buenos Aires,Premium,1.8,87850.0,4,1,1
+C0335,Cliente 335,52,CABA,PyME,11.9,8600.0,2,1,0
+C0336,Cliente 336,42,CABA,Joven,4.0,9400.0,5,1,0
+C0337,Cliente 337,46,Santa Fe,Retail,0.6,19800.0,5,1,0
+C0338,Cliente 338,35,Buenos Aires,PyME,3.3,34500.0,4,1,0
+C0339,Cliente 339,63,Buenos Aires,Premium,6.1,331100.0,2,0,1
+C0340,Cliente 340,35,Buenos Aires,Retail,4.9,18000.0,5,1,0
+C0341,Cliente 341,19,Buenos Aires,Retail,0.8,91200.0,2,1,0
+C0342,Cliente 342,71,Santa Fe,PyME,14.4,103100.0,2,0,0
+C0343,Cliente 343,52,Buenos Aires,Retail,2.4,74200.0,4,1,0
+C0344,Cliente 344,33,Córdoba,Retail,0.7,11000.0,4,1,0
+C0345,Cliente 345,58,CABA,Retail,0.8,120800.0,1,1,0
+C0346,Cliente 346,53,Córdoba,PyME,0.4,1358500.0,5,1,0
+C0347,Cliente 347,50,Mendoza,PyME,6.5,86600.0,5,0,0
+C0348,Cliente 348,21,CABA,PyME,0.5,700.0,5,0,0
+C0349,Cliente 349,50,Santa Fe,Retail,0.5,385100.0,3,0,0
+C0350,Cliente 350,31,CABA,Retail,7.6,20900.0,2,1,0
+C0351,Cliente 351,38,CABA,Premium,1.7,6270250.0,4,1,0
+C0352,Cliente 352,65,Rosario,Retail,0.1,71300.0,5,1,1
+C0353,Cliente 353,37,Buenos Aires,Retail,0.2,4800.0,1,1,0
+C0354,Cliente 354,25,Buenos Aires,Premium,0.6,9450.0,5,1,0
+C0355,Cliente 355,24,Santa Fe,Joven,1.0,603000.0,2,1,0
+C0356,Cliente 356,20,Buenos Aires,PyME,4.4,314500.0,2,1,0
+C0357,Cliente 357,34,Mendoza,PyME,0.7,1688000.0,4,1,0
+C0358,Cliente 358,50,CABA,Joven,0.5,60900.0,3,0,0
+C0359,Cliente 359,65,Tucumán,Retail,5.8,55000.0,4,0,1
+C0360,Cliente 360,29,Santa Fe,Premium,4.4,117950.0,5,1,0
+C0361,Cliente 361,68,Córdoba,Joven,2.3,22300.0,1,1,0
+C0362,Cliente 362,39,Tucumán,Retail,3.2,33200.0,4,1,0
+C0363,Cliente 363,39,CABA,PyME,1.5,83000.0,3,0,0
+C0364,Cliente 364,63,Rosario,Premium,2.6,59150.0,4,1,1
+C0365,Cliente 365,47,Buenos Aires,Premium,2.8,17150.0,2,1,0
+C0366,Cliente 366,55,CABA,Premium,2.0,266350.0,5,1,0
+C0367,Cliente 367,55,Buenos Aires,Joven,9.5,16300.0,5,1,0
+C0368,Cliente 368,62,CABA,PyME,0.1,500.0,5,1,0
+C0369,Cliente 369,68,Buenos Aires,Retail,6.1,137200.0,5,0,0
+C0370,Cliente 370,71,Mendoza,PyME,0.5,11400.0,5,1,0
+C0371,Cliente 371,25,Mendoza,Retail,6.4,161600.0,5,1,0
+C0372,Cliente 372,44,Rosario,Retail,3.8,155900.0,1,1,1
+C0373,Cliente 373,44,Buenos Aires,Retail,7.4,91600.0,3,1,0
+C0374,Cliente 374,51,Córdoba,Retail,0.4,2533800.0,5,0,0
+C0375,Cliente 375,38,CABA,Retail,3.3,48700.0,3,1,0
+C0376,Cliente 376,47,CABA,Joven,2.8,39000.0,5,0,0
+C0377,Cliente 377,50,CABA,PyME,4.9,167000.0,4,1,0
+C0378,Cliente 378,45,CABA,Premium,3.1,192850.0,5,1,0
+C0379,Cliente 379,64,Santa Fe,Retail,3.1,341400.0,2,1,0
+C0380,Cliente 380,50,Córdoba,Joven,2.2,8900.0,1,1,0
+C0381,Cliente 381,22,CABA,Joven,1.5,9200.0,4,1,1
+C0382,Cliente 382,65,Buenos Aires,PyME,2.6,188900.0,4,1,0
+C0383,Cliente 383,36,Buenos Aires,Retail,0.5,10400.0,2,1,0
+C0384,Cliente 384,21,Buenos Aires,Retail,13.0,149300.0,5,1,0
+C0385,Cliente 385,52,Rosario,Retail,5.0,104300.0,1,0,0
+C0386,Cliente 386,66,Buenos Aires,Retail,12.2,21100.0,4,0,0
+C0387,Cliente 387,34,Buenos Aires,Retail,1.0,103900.0,1,1,1
+C0388,Cliente 388,61,CABA,Joven,8.5,9400.0,4,0,0
+C0389,Cliente 389,45,Santa Fe,Retail,6.6,13400.0,5,1,1
+C0390,Cliente 390,47,Rosario,Retail,4.5,41900.0,4,1,0
+C0391,Cliente 391,46,Santa Fe,Retail,3.9,67400.0,4,0,0
+C0392,Cliente 392,63,Córdoba,Retail,1.5,38000.0,3,1,0
+C0393,Cliente 393,70,CABA,Retail,6.8,114700.0,5,1,0
+C0394,Cliente 394,23,Buenos Aires,Retail,2.8,107200.0,2,1,0
+C0395,Cliente 395,52,Rosario,Retail,0.3,593700.0,2,0,1
+C0396,Cliente 396,58,Santa Fe,PyME,1.5,51900.0,5,0,1
+C0397,Cliente 397,54,Córdoba,Joven,11.0,359300.0,2,1,1
+C0398,Cliente 398,41,Santa Fe,Retail,7.6,238300.0,5,1,0
+C0399,Cliente 399,46,Santa Fe,Retail,16.0,1869100.0,2,1,0
+C0400,Cliente 400,66,Córdoba,PyME,4.0,49500.0,3,1,0
+C0401,Cliente 401,63,Rosario,Retail,1.1,31900.0,2,1,0
+C0402,Cliente 402,70,Tucumán,Retail,0.7,395000.0,4,0,0
+C0403,Cliente 403,48,Córdoba,PyME,0.8,106700.0,5,1,0
+C0404,Cliente 404,52,Córdoba,Retail,0.1,409400.0,1,1,0
+C0405,Cliente 405,50,Buenos Aires,Premium,2.0,614250.0,1,1,0
+C0406,Cliente 406,69,Córdoba,Premium,0.8,8750.0,5,1,0
+C0407,Cliente 407,38,Buenos Aires,Retail,2.1,105300.0,3,0,0
+C0408,Cliente 408,49,Córdoba,Retail,10.9,95500.0,2,1,0
+C0409,Cliente 409,40,Rosario,PyME,2.3,73100.0,3,1,0
+C0410,Cliente 410,50,Córdoba,Retail,8.4,49100.0,1,1,0
+C0411,Cliente 411,20,CABA,Retail,3.7,5500.0,5,1,0
+C0412,Cliente 412,35,CABA,PyME,1.1,222200.0,5,1,0
+C0413,Cliente 413,42,Buenos Aires,Premium,1.8,367150.0,3,1,0
+C0414,Cliente 414,59,Santa Fe,Retail,0.4,312700.0,3,1,0
+C0415,Cliente 415,48,Buenos Aires,PyME,1.6,6000.0,2,1,0
+C0416,Cliente 416,71,Buenos Aires,Retail,4.5,128100.0,4,1,0
+C0417,Cliente 417,20,CABA,PyME,0.3,42100.0,4,1,0
+C0418,Cliente 418,57,Santa Fe,PyME,0.9,74300.0,2,0,0
+C0419,Cliente 419,63,Santa Fe,Premium,1.9,149800.0,4,1,0
+C0420,Cliente 420,41,Buenos Aires,Retail,16.1,135300.0,1,1,0
+C0421,Cliente 421,67,CABA,Joven,6.1,46900.0,4,1,0
+C0422,Cliente 422,49,CABA,Retail,5.3,12400.0,2,1,0
+C0423,Cliente 423,64,Córdoba,PyME,0.5,68200.0,4,1,0
+C0424,Cliente 424,39,Córdoba,Retail,6.1,43400.0,5,1,0
+C0425,Cliente 425,40,CABA,Retail,6.2,52800.0,3,1,0
+C0426,Cliente 426,19,Córdoba,Retail,3.7,500.0,1,1,0
+C0427,Cliente 427,44,CABA,Joven,18.6,166700.0,5,1,0
+C0428,Cliente 428,59,Mendoza,Joven,1.6,37300.0,5,1,1
+C0429,Cliente 429,19,CABA,Retail,11.3,7900.0,2,1,0
+C0430,Cliente 430,43,CABA,Retail,9.8,238900.0,3,1,0
+C0431,Cliente 431,34,CABA,PyME,0.0,155500.0,3,1,0
+C0432,Cliente 432,57,Córdoba,Retail,2.4,36600.0,1,1,0
+C0433,Cliente 433,50,Santa Fe,Retail,15.1,10600.0,2,1,1
+C0434,Cliente 434,26,CABA,Premium,0.4,273700.0,1,0,0
+C0435,Cliente 435,60,Córdoba,Premium,3.2,252000.0,4,1,0
+C0436,Cliente 436,71,Santa Fe,Joven,15.4,239500.0,5,0,1
+C0437,Cliente 437,65,CABA,Retail,3.2,30800.0,1,1,0
+C0438,Cliente 438,56,CABA,Retail,0.8,359500.0,5,1,0
+C0439,Cliente 439,46,Mendoza,Premium,3.5,93100.0,2,1,1
+C0440,Cliente 440,59,CABA,PyME,0.9,8000.0,4,0,0
+C0441,Cliente 441,43,CABA,Premium,2.9,38500.0,2,1,0
+C0442,Cliente 442,52,Rosario,Premium,0.3,190750.0,4,1,0
+C0443,Cliente 443,67,Buenos Aires,Retail,3.7,54300.0,4,1,0
+C0444,Cliente 444,42,Buenos Aires,PyME,2.9,97900.0,5,1,0
+C0445,Cliente 445,41,CABA,Retail,5.4,52300.0,2,1,1
+C0446,Cliente 446,30,Tucumán,Retail,4.0,259400.0,2,0,0
+C0447,Cliente 447,24,Buenos Aires,Premium,3.2,141750.0,1,0,0
+C0448,Cliente 448,53,Buenos Aires,Retail,4.7,3000.0,2,1,1
+C0449,Cliente 449,62,Buenos Aires,Retail,0.6,49900.0,1,0,0
+C0450,Cliente 450,37,Buenos Aires,PyME,3.6,3000.0,3,1,0
+C0451,Cliente 451,18,Buenos Aires,Retail,0.8,90000.0,3,1,0
+C0452,Cliente 452,25,CABA,PyME,10.4,292400.0,3,1,1
+C0453,Cliente 453,63,Córdoba,Retail,0.3,13600.0,2,1,0
+C0454,Cliente 454,33,Buenos Aires,PyME,2.3,502700.0,2,0,0
+C0455,Cliente 455,31,CABA,Retail,4.8,212000.0,1,1,0
+C0456,Cliente 456,29,Buenos Aires,Retail,2.5,365800.0,4,1,0
+C0457,Cliente 457,68,CABA,Joven,0.4,79600.0,1,1,1
+C0458,Cliente 458,40,CABA,PyME,3.2,13500.0,3,1,0
+C0459,Cliente 459,32,Santa Fe,Retail,4.1,193200.0,1,1,0
+C0460,Cliente 460,45,Buenos Aires,Retail,4.9,23500.0,4,0,1
+C0461,Cliente 461,51,CABA,PyME,1.9,71500.0,2,0,0
+C0462,Cliente 462,19,Buenos Aires,Premium,3.3,162050.0,1,0,0
+C0463,Cliente 463,49,Mendoza,PyME,2.4,323500.0,3,1,0
+C0464,Cliente 464,40,Santa Fe,PyME,4.5,179100.0,3,1,0
+C0465,Cliente 465,39,Córdoba,Retail,3.5,53100.0,2,1,0
+C0466,Cliente 466,68,Buenos Aires,Retail,3.0,3200.0,1,1,1
+C0467,Cliente 467,42,Tucumán,Premium,1.1,80850.0,4,1,0
+C0468,Cliente 468,39,Buenos Aires,Retail,0.0,172200.0,2,1,0
+C0469,Cliente 469,39,Buenos Aires,Retail,0.8,91100.0,1,1,0
+C0470,Cliente 470,66,CABA,Joven,0.5,6300.0,5,1,0
+C0471,Cliente 471,69,Buenos Aires,Premium,2.4,14000.0,3,1,0
+C0472,Cliente 472,59,Rosario,PyME,3.8,80300.0,4,1,0
+C0473,Cliente 473,23,Santa Fe,Premium,1.0,43050.0,4,1,1
+C0474,Cliente 474,32,Buenos Aires,Premium,11.2,49700.0,4,0,0
+C0475,Cliente 475,71,Córdoba,Retail,0.0,164200.0,3,1,0
+C0476,Cliente 476,60,Rosario,Retail,5.9,363400.0,1,0,0
+C0477,Cliente 477,54,Mendoza,Retail,3.9,19400.0,2,1,1
+C0478,Cliente 478,50,Córdoba,Retail,1.9,56000.0,1,1,0
+C0479,Cliente 479,25,Tucumán,PyME,0.2,53600.0,2,1,0
+C0480,Cliente 480,70,Rosario,Retail,3.9,46800.0,4,0,0
+C0481,Cliente 481,61,Santa Fe,Retail,1.9,63600.0,1,0,1
+C0482,Cliente 482,61,Buenos Aires,Retail,11.0,186200.0,4,1,0
+C0483,Cliente 483,22,CABA,Retail,3.1,21800.0,5,1,0
+C0484,Cliente 484,56,Mendoza,Retail,11.2,6100.0,4,1,0
+C0485,Cliente 485,21,Buenos Aires,Retail,1.0,755400.0,4,1,0
+C0486,Cliente 486,23,Mendoza,Retail,5.2,306900.0,2,0,0
+C0487,Cliente 487,62,Buenos Aires,Retail,3.8,11400.0,5,1,0
+C0488,Cliente 488,49,Buenos Aires,Retail,5.4,73400.0,4,1,0
+C0489,Cliente 489,69,CABA,PyME,1.0,272700.0,4,1,1
+C0490,Cliente 490,47,Buenos Aires,Retail,4.4,184200.0,5,1,1
+C0491,Cliente 491,64,Rosario,Retail,2.8,119700.0,5,1,0
+C0492,Cliente 492,52,Mendoza,Premium,5.4,162400.0,1,1,1
+C0493,Cliente 493,57,Santa Fe,Retail,1.6,798900.0,2,1,0
+C0494,Cliente 494,69,Córdoba,PyME,8.8,83400.0,5,1,0
+C0495,Cliente 495,33,Buenos Aires,Premium,0.4,96950.0,5,1,0
+C0496,Cliente 496,30,CABA,Retail,6.6,221200.0,3,0,0
+C0497,Cliente 497,67,Córdoba,Premium,7.9,242200.0,5,1,0
+C0498,Cliente 498,59,CABA,Retail,6.8,101200.0,2,1,0
+C0499,Cliente 499,47,Buenos Aires,Premium,2.9,284200.0,4,1,0
+C0500,Cliente 500,36,CABA,Retail,2.3,126100.0,4,1,0
+C0501,Cliente 501,34,CABA,PyME,20.0,13800.0,4,1,0
+C0502,Cliente 502,36,Rosario,Retail,1.0,6800.0,4,1,0
+C0503,Cliente 503,45,Mendoza,Premium,3.2,1801100.0,3,1,1
+C0504,Cliente 504,43,CABA,Premium,4.4,304850.0,5,0,0
+C0505,Cliente 505,54,Córdoba,Retail,4.8,190300.0,4,1,0
+C0506,Cliente 506,43,Santa Fe,Retail,0.9,4300.0,1,1,0
+C0507,Cliente 507,70,Buenos Aires,PyME,4.2,296600.0,4,1,0
+C0508,Cliente 508,40,Mendoza,PyME,6.8,27400.0,5,1,1
+C0509,Cliente 509,26,Mendoza,Retail,0.2,17900.0,4,1,0
+C0510,Cliente 510,29,CABA,PyME,9.7,54400.0,3,0,0
+C0511,Cliente 511,70,CABA,Joven,0.1,13800.0,2,1,0
+C0512,Cliente 512,18,Buenos Aires,PyME,1.8,59700.0,2,1,0
+C0513,Cliente 513,18,CABA,Retail,0.1,48800.0,5,1,1
+C0514,Cliente 514,64,Buenos Aires,PyME,0.3,293800.0,2,1,0
+C0515,Cliente 515,51,Mendoza,Retail,9.7,579600.0,2,1,0
+C0516,Cliente 516,49,Buenos Aires,Joven,1.8,552500.0,1,1,0
+C0517,Cliente 517,71,CABA,Retail,2.2,2000.0,5,1,0
+C0518,Cliente 518,65,Tucumán,Retail,1.0,14700.0,5,1,0
+C0519,Cliente 519,42,Santa Fe,PyME,3.6,2000.0,2,1,0
+C0520,Cliente 520,57,Buenos Aires,Retail,3.6,10000.0,2,0,0
+C0521,Cliente 521,62,Buenos Aires,Joven,1.9,22600.0,2,1,0
+C0522,Cliente 522,70,Buenos Aires,Joven,1.6,110800.0,3,0,1
+C0523,Cliente 523,18,Córdoba,Premium,8.7,95900.0,4,0,0
+C0524,Cliente 524,33,Buenos Aires,Retail,1.9,28600.0,3,1,0
+C0525,Cliente 525,56,CABA,Premium,2.7,275100.0,5,1,0
+C0526,Cliente 526,22,Rosario,Retail,1.3,4600.0,1,1,0
+C0527,Cliente 527,39,Buenos Aires,Retail,6.2,17000.0,4,1,0
+C0528,Cliente 528,46,Mendoza,PyME,2.0,28100.0,1,1,0
+C0529,Cliente 529,20,Rosario,Retail,2.9,44200.0,5,0,0
+C0530,Cliente 530,29,Buenos Aires,Retail,1.2,67200.0,5,0,0
+C0531,Cliente 531,43,Mendoza,Joven,17.6,568600.0,1,1,0
+C0532,Cliente 532,33,CABA,Retail,1.4,233900.0,1,1,0
+C0533,Cliente 533,68,Tucumán,Retail,5.9,18900.0,1,1,0
+C0534,Cliente 534,54,Córdoba,Joven,2.2,40500.0,5,0,0
+C0535,Cliente 535,39,Córdoba,Retail,0.9,36500.0,2,1,1
+C0536,Cliente 536,46,CABA,PyME,6.4,27700.0,1,1,1
+C0537,Cliente 537,31,Mendoza,Joven,1.6,90100.0,4,1,0
+C0538,Cliente 538,45,Santa Fe,Joven,8.0,3700.0,5,1,0
+C0539,Cliente 539,22,CABA,Premium,9.9,785400.0,3,0,0
+C0540,Cliente 540,64,Mendoza,Retail,7.9,759400.0,3,1,0
+C0541,Cliente 541,66,Buenos Aires,Retail,0.1,39900.0,4,1,1
+C0542,Cliente 542,47,Buenos Aires,PyME,6.2,38800.0,2,0,0
+C0543,Cliente 543,63,Buenos Aires,PyME,2.1,75800.0,1,1,0
+C0544,Cliente 544,69,CABA,Premium,8.3,967050.0,5,1,0
+C0545,Cliente 545,22,Buenos Aires,Retail,4.1,36800.0,1,1,0
+C0546,Cliente 546,29,Tucumán,Retail,7.2,243000.0,5,1,0
+C0547,Cliente 547,33,Buenos Aires,Retail,2.8,124600.0,3,1,0
+C0548,Cliente 548,43,Córdoba,PyME,3.1,2068700.0,1,1,0
+C0549,Cliente 549,43,Buenos Aires,Retail,0.6,36600.0,4,1,0
+C0550,Cliente 550,65,Mendoza,Joven,6.1,3100.0,2,1,0
+C0551,Cliente 551,38,Rosario,PyME,2.2,7000.0,4,1,0
+C0552,Cliente 552,56,CABA,Retail,2.8,61000.0,2,0,0
+C0553,Cliente 553,53,Mendoza,Premium,6.2,979300.0,1,1,0
+C0554,Cliente 554,50,Buenos Aires,Retail,3.7,22500.0,1,1,0
+C0555,Cliente 555,47,Santa Fe,Premium,0.9,148050.0,2,1,1
+C0556,Cliente 556,54,Buenos Aires,PyME,3.6,167300.0,3,1,1
+C0557,Cliente 557,40,Tucumán,PyME,2.1,14100.0,5,0,1
+C0558,Cliente 558,27,Buenos Aires,PyME,2.5,23900.0,4,1,0
+C0559,Cliente 559,71,Córdoba,Retail,0.1,10400.0,4,1,0
+C0560,Cliente 560,22,Santa Fe,Retail,0.9,350600.0,4,1,0
+C0561,Cliente 561,53,Buenos Aires,PyME,1.3,604700.0,1,1,1
+C0562,Cliente 562,51,Buenos Aires,Retail,5.0,5600.0,4,1,1
+C0563,Cliente 563,69,Buenos Aires,Retail,0.0,48400.0,5,1,1
+C0564,Cliente 564,48,CABA,Retail,2.1,494300.0,5,0,0
+C0565,Cliente 565,27,Córdoba,Premium,10.3,381150.0,2,0,1
+C0566,Cliente 566,36,Buenos Aires,Retail,0.5,28700.0,1,1,0
+C0567,Cliente 567,49,CABA,Premium,2.9,20650.0,5,1,0
+C0568,Cliente 568,18,Buenos Aires,Joven,6.2,337500.0,3,0,0
+C0569,Cliente 569,22,Santa Fe,Retail,11.4,102800.0,1,1,0
+C0570,Cliente 570,62,Buenos Aires,Retail,5.5,6600.0,1,1,0
+C0571,Cliente 571,21,Buenos Aires,Retail,5.1,356800.0,5,1,0
+C0572,Cliente 572,33,Buenos Aires,PyME,7.0,5400.0,3,0,0
+C0573,Cliente 573,41,CABA,Retail,2.4,43000.0,2,1,0
+C0574,Cliente 574,33,Mendoza,Retail,6.6,40300.0,5,1,1
+C0575,Cliente 575,19,CABA,Retail,0.0,678500.0,3,0,0
+C0576,Cliente 576,66,Buenos Aires,PyME,10.3,40500.0,1,0,0
+C0577,Cliente 577,45,Santa Fe,Retail,2.3,40300.0,3,0,0
+C0578,Cliente 578,49,Santa Fe,PyME,3.2,7700.0,1,1,1
+C0579,Cliente 579,44,Buenos Aires,Joven,1.2,22900.0,5,1,0
+C0580,Cliente 580,37,Santa Fe,Retail,5.4,17600.0,5,1,0
+C0581,Cliente 581,41,Tucumán,PyME,0.3,19000.0,4,1,0
+C0582,Cliente 582,29,Buenos Aires,Retail,8.2,60400.0,4,1,0
+C0583,Cliente 583,67,Santa Fe,PyME,7.0,1600.0,4,1,0
+C0584,Cliente 584,52,Santa Fe,Premium,1.0,21700.0,5,0,1
+C0585,Cliente 585,50,CABA,PyME,6.6,50700.0,2,1,0
+C0586,Cliente 586,50,Buenos Aires,Retail,6.2,71800.0,5,1,0
+C0587,Cliente 587,68,Buenos Aires,Retail,4.0,42200.0,3,1,1
+C0588,Cliente 588,60,Mendoza,Retail,1.9,56300.0,5,1,1
+C0589,Cliente 589,54,Rosario,Retail,1.3,32400.0,5,1,0
+C0590,Cliente 590,29,Córdoba,Retail,1.1,58200.0,1,1,1
+C0591,Cliente 591,20,CABA,Retail,1.5,114800.0,1,1,0
+C0592,Cliente 592,18,Córdoba,Retail,9.4,113600.0,1,1,0
+C0593,Cliente 593,50,Córdoba,Retail,0.3,21300.0,5,1,0
+C0594,Cliente 594,57,CABA,PyME,7.1,236200.0,2,1,0
+C0595,Cliente 595,27,Buenos Aires,Retail,1.7,75800.0,3,0,0
+C0596,Cliente 596,60,Mendoza,Retail,2.9,380100.0,3,1,0
+C0597,Cliente 597,61,CABA,Retail,6.3,513700.0,2,1,0
+C0598,Cliente 598,46,Santa Fe,Retail,8.6,6900.0,2,0,0
+C0599,Cliente 599,30,Buenos Aires,Joven,1.7,16500.0,3,1,0
+C0600,Cliente 600,29,Buenos Aires,Retail,2.5,202900.0,4,0,0
+C0601,Cliente 601,48,Buenos Aires,PyME,2.1,4900.0,1,0,0
+C0602,Cliente 602,63,CABA,Joven,0.1,504000.0,1,1,0
+C0603,Cliente 603,19,Tucumán,PyME,1.4,35700.0,3,0,0
+C0604,Cliente 604,68,Buenos Aires,Premium,2.5,496650.0,2,1,0
+C0605,Cliente 605,67,Mendoza,PyME,2.1,50300.0,4,1,0
+C0606,Cliente 606,52,CABA,Joven,5.1,7400.0,3,1,0
+C0607,Cliente 607,40,Mendoza,Premium,1.9,1020950.0,1,1,0
+C0608,Cliente 608,34,Buenos Aires,Premium,2.7,12979050.0,5,0,1
+C0609,Cliente 609,43,Mendoza,Premium,2.2,96950.0,2,1,0
+C0610,Cliente 610,25,Santa Fe,Premium,5.4,129150.0,5,1,0
+C0611,Cliente 611,46,Buenos Aires,Premium,8.0,3850.0,3,1,0
+C0612,Cliente 612,43,Buenos Aires,Retail,3.0,454600.0,1,1,1
+C0613,Cliente 613,27,Mendoza,Retail,6.2,235100.0,4,1,0
+C0614,Cliente 614,43,Rosario,Retail,1.4,4400.0,5,1,0
+C0615,Cliente 615,51,Buenos Aires,Retail,3.1,2700.0,4,0,0
+C0616,Cliente 616,68,Santa Fe,Retail,1.7,3200.0,1,1,0
+C0617,Cliente 617,58,Tucumán,Retail,2.1,157600.0,5,0,0
+C0618,Cliente 618,24,Mendoza,Premium,5.3,640500.0,4,1,0
+C0619,Cliente 619,21,Rosario,Retail,8.5,15000.0,4,1,0
+C0620,Cliente 620,70,Santa Fe,PyME,0.5,126600.0,5,1,0
+C0621,Cliente 621,67,CABA,Retail,4.0,76000.0,1,1,0
+C0622,Cliente 622,62,CABA,Retail,3.5,34500.0,4,1,0
+C0623,Cliente 623,28,CABA,PyME,0.5,256600.0,3,0,0
+C0624,Cliente 624,46,Santa Fe,Premium,1.0,34300.0,5,1,0
+C0625,Cliente 625,53,Santa Fe,Retail,1.5,334800.0,2,0,1
+C0626,Cliente 626,42,Buenos Aires,PyME,0.7,20100.0,2,1,1
+C0627,Cliente 627,38,Mendoza,PyME,1.1,866600.0,1,1,0
+C0628,Cliente 628,53,Santa Fe,Retail,1.2,13300.0,3,1,0
+C0629,Cliente 629,27,Córdoba,Retail,1.6,35300.0,4,0,0
+C0630,Cliente 630,54,CABA,Joven,5.5,65400.0,2,1,0
+C0631,Cliente 631,26,CABA,Premium,3.4,226800.0,1,0,0
+C0632,Cliente 632,41,Buenos Aires,Premium,17.1,437500.0,3,0,1
+C0633,Cliente 633,52,Buenos Aires,PyME,2.1,8700.0,3,1,0
+C0634,Cliente 634,66,Buenos Aires,Retail,5.6,56600.0,1,1,0
+C0635,Cliente 635,52,Buenos Aires,Retail,8.2,73700.0,1,1,0
+C0636,Cliente 636,65,CABA,Retail,4.5,27100.0,4,1,0
+C0637,Cliente 637,53,CABA,PyME,2.1,109800.0,1,0,0
+C0638,Cliente 638,35,Buenos Aires,Premium,5.6,27650.0,4,1,0
+C0639,Cliente 639,66,Santa Fe,Premium,0.9,128450.0,4,1,0
+C0640,Cliente 640,56,Buenos Aires,Retail,1.6,19300.0,5,1,1
+C0641,Cliente 641,49,Tucumán,Retail,3.2,36900.0,3,1,0
+C0642,Cliente 642,41,Rosario,Retail,3.4,524700.0,3,1,1
+C0643,Cliente 643,40,Buenos Aires,PyME,0.1,540200.0,3,1,1
+C0644,Cliente 644,49,CABA,Premium,11.6,1409100.0,5,1,0
+C0645,Cliente 645,54,Buenos Aires,Retail,4.8,29900.0,4,1,0
+C0646,Cliente 646,29,Córdoba,PyME,2.7,233600.0,4,0,0
+C0647,Cliente 647,66,Córdoba,Retail,10.8,70900.0,1,1,1
+C0648,Cliente 648,30,Buenos Aires,Joven,2.3,64100.0,5,1,0
+C0649,Cliente 649,40,Córdoba,Retail,15.7,53300.0,1,1,0
+C0650,Cliente 650,42,Buenos Aires,Premium,2.9,2929500.0,5,1,0
+C0651,Cliente 651,52,Buenos Aires,Retail,0.5,464500.0,1,1,0
+C0652,Cliente 652,58,Córdoba,Joven,5.8,183000.0,2,0,1
+C0653,Cliente 653,47,CABA,Retail,4.5,46400.0,3,1,0
+C0654,Cliente 654,34,Córdoba,Retail,5.9,63500.0,3,1,0
+C0655,Cliente 655,66,CABA,Retail,12.1,132700.0,4,1,0
+C0656,Cliente 656,37,Rosario,Retail,6.0,27400.0,2,1,1
+C0657,Cliente 657,65,Buenos Aires,Retail,3.8,244600.0,3,1,0
+C0658,Cliente 658,42,CABA,Joven,7.8,15000.0,4,1,0
+C0659,Cliente 659,39,Córdoba,Retail,4.5,107800.0,2,1,0
+C0660,Cliente 660,30,CABA,PyME,2.1,1900.0,3,1,0
+C0661,Cliente 661,36,Rosario,Premium,8.7,91700.0,1,1,0
+C0662,Cliente 662,66,Santa Fe,Premium,1.0,4729200.0,5,1,0
+C0663,Cliente 663,53,Córdoba,Retail,5.0,283300.0,2,0,0
+C0664,Cliente 664,29,Santa Fe,Retail,8.5,599100.0,4,1,0
+C0665,Cliente 665,58,Rosario,PyME,5.3,22000.0,2,1,0
+C0666,Cliente 666,36,Tucumán,Joven,4.8,70000.0,4,1,0
+C0667,Cliente 667,29,Santa Fe,Retail,5.6,409600.0,2,1,0
+C0668,Cliente 668,26,Santa Fe,Retail,2.5,154800.0,4,1,1
+C0669,Cliente 669,24,Buenos Aires,Retail,8.3,128400.0,3,1,1
+C0670,Cliente 670,45,Buenos Aires,Joven,0.9,691000.0,1,1,0
+C0671,Cliente 671,31,Córdoba,Retail,0.5,12600.0,3,1,0
+C0672,Cliente 672,48,Buenos Aires,Retail,1.3,45400.0,1,1,0
+C0673,Cliente 673,69,CABA,PyME,3.0,4300.0,3,1,0
+C0674,Cliente 674,36,Buenos Aires,Retail,2.9,11600.0,3,1,0
+C0675,Cliente 675,64,CABA,Retail,6.9,299900.0,2,1,0
+C0676,Cliente 676,33,Santa Fe,Premium,2.1,52850.0,5,1,0
+C0677,Cliente 677,70,Tucumán,Joven,2.6,180500.0,4,1,1
+C0678,Cliente 678,22,Buenos Aires,Retail,0.1,720500.0,4,1,0
+C0679,Cliente 679,52,CABA,Retail,2.1,45800.0,4,1,0
+C0680,Cliente 680,29,Mendoza,Retail,4.2,130600.0,1,0,0
+C0681,Cliente 681,42,Buenos Aires,Retail,0.1,182600.0,4,1,0
+C0682,Cliente 682,69,Mendoza,Premium,1.3,33600.0,4,1,0
+C0683,Cliente 683,38,CABA,Retail,0.9,23700.0,2,1,0
+C0684,Cliente 684,53,CABA,Retail,0.2,13300.0,3,0,0
+C0685,Cliente 685,70,Rosario,Retail,2.6,26800.0,4,1,0
+C0686,Cliente 686,40,Buenos Aires,Premium,0.8,613550.0,5,1,1
+C0687,Cliente 687,33,Córdoba,Premium,5.4,85750.0,4,1,0
+C0688,Cliente 688,56,Mendoza,PyME,7.5,56800.0,1,1,0
+C0689,Cliente 689,62,Buenos Aires,Retail,3.2,12500.0,1,1,0
+C0690,Cliente 690,70,Córdoba,PyME,16.0,376900.0,1,1,0
+C0691,Cliente 691,59,Rosario,PyME,2.4,26400.0,4,0,0
+C0692,Cliente 692,56,Buenos Aires,Retail,2.9,588000.0,2,0,0
+C0693,Cliente 693,31,Mendoza,Retail,18.1,65600.0,5,1,1
+C0694,Cliente 694,48,Córdoba,Retail,1.1,7300.0,4,1,1
+C0695,Cliente 695,22,Córdoba,Retail,11.4,46300.0,2,0,0
+C0696,Cliente 696,52,Córdoba,Retail,0.2,12200.0,2,1,1
+C0697,Cliente 697,40,Buenos Aires,Retail,2.4,144900.0,4,1,0
+C0698,Cliente 698,46,Tucumán,Retail,0.3,40500.0,4,1,0
+C0699,Cliente 699,60,Tucumán,PyME,5.2,76500.0,2,1,0
+C0700,Cliente 700,28,Córdoba,Retail,3.8,34400.0,2,1,1
+C0701,Cliente 701,35,Santa Fe,PyME,4.9,26000.0,2,1,0
+C0702,Cliente 702,64,Córdoba,Premium,1.9,48650.0,4,1,0
+C0703,Cliente 703,29,CABA,PyME,1.8,209900.0,2,1,0
+C0704,Cliente 704,26,Córdoba,Premium,0.2,161700.0,1,1,0
+C0705,Cliente 705,27,Córdoba,Retail,1.7,37300.0,4,1,0
+C0706,Cliente 706,61,Córdoba,Premium,10.6,155750.0,1,0,1
+C0707,Cliente 707,34,Santa Fe,Retail,1.9,21600.0,3,1,0
+C0708,Cliente 708,55,CABA,Retail,7.1,37500.0,4,1,0
+C0709,Cliente 709,24,Buenos Aires,Joven,7.4,81500.0,3,0,0
+C0710,Cliente 710,63,Buenos Aires,Retail,1.9,12700.0,2,0,0
+C0711,Cliente 711,30,CABA,Retail,4.0,15800.0,2,1,0
+C0712,Cliente 712,57,Santa Fe,PyME,0.4,473300.0,5,1,0
+C0713,Cliente 713,59,Córdoba,PyME,0.4,34700.0,2,1,0
+C0714,Cliente 714,26,Córdoba,Premium,0.2,91700.0,3,0,0
+C0715,Cliente 715,67,CABA,Retail,3.5,8000.0,2,0,0
+C0716,Cliente 716,44,Córdoba,Premium,2.2,750750.0,4,0,0
+C0717,Cliente 717,19,CABA,Retail,3.2,12300.0,2,1,0
+C0718,Cliente 718,22,CABA,PyME,2.9,58500.0,5,1,0
+C0719,Cliente 719,46,Santa Fe,Joven,1.7,4600.0,2,1,1
+C0720,Cliente 720,54,Mendoza,PyME,4.5,204300.0,3,1,0
+C0721,Cliente 721,55,CABA,PyME,5.7,349900.0,3,1,0
+C0722,Cliente 722,36,Buenos Aires,Retail,0.1,123800.0,2,1,0
+C0723,Cliente 723,25,Buenos Aires,PyME,0.9,6000.0,3,1,0
+C0724,Cliente 724,65,Buenos Aires,PyME,5.0,210700.0,3,1,1
+C0725,Cliente 725,62,Córdoba,Retail,2.0,17300.0,5,1,0
+C0726,Cliente 726,18,CABA,PyME,4.3,10300.0,4,1,0
+C0727,Cliente 727,39,CABA,Retail,1.7,33700.0,5,1,0
+C0728,Cliente 728,69,CABA,Premium,2.0,114450.0,1,1,0
+C0729,Cliente 729,34,Buenos Aires,PyME,0.7,28100.0,5,1,0
+C0730,Cliente 730,24,CABA,Premium,1.2,1415750.0,2,1,0
+C0731,Cliente 731,42,Buenos Aires,Retail,3.7,1224100.0,4,0,0
+C0732,Cliente 732,62,CABA,Premium,2.3,26950.0,2,1,0
+C0733,Cliente 733,21,Buenos Aires,Premium,6.0,74550.0,1,1,0
+C0734,Cliente 734,53,Mendoza,Joven,7.7,74200.0,4,1,1
+C0735,Cliente 735,23,Buenos Aires,Retail,3.1,33400.0,3,1,0
+C0736,Cliente 736,48,Rosario,Retail,5.7,109000.0,5,0,0
+C0737,Cliente 737,36,CABA,PyME,1.5,236600.0,2,1,0
+C0738,Cliente 738,61,Mendoza,Retail,2.1,184300.0,1,0,0
+C0739,Cliente 739,71,Córdoba,Premium,5.0,522900.0,3,1,0
+C0740,Cliente 740,56,Santa Fe,Premium,2.0,2524200.0,5,0,0
+C0741,Cliente 741,44,Santa Fe,PyME,3.6,5500.0,3,1,0
+C0742,Cliente 742,27,CABA,Premium,0.8,1929900.0,5,0,0
+C0743,Cliente 743,43,CABA,Premium,3.7,112700.0,4,1,0
+C0744,Cliente 744,36,CABA,Retail,7.9,194400.0,3,1,1
+C0745,Cliente 745,56,Córdoba,Retail,8.1,12800.0,3,1,0
+C0746,Cliente 746,20,Buenos Aires,Retail,5.2,15300.0,3,0,0
+C0747,Cliente 747,62,CABA,Retail,5.5,161600.0,4,1,0
+C0748,Cliente 748,30,Córdoba,Premium,3.3,11550.0,1,1,0
+C0749,Cliente 749,67,Córdoba,PyME,3.5,264100.0,5,0,0
+C0750,Cliente 750,45,Santa Fe,Premium,0.6,1387050.0,3,1,1
+C0751,Cliente 751,37,Córdoba,PyME,2.3,78200.0,4,1,0
+C0752,Cliente 752,45,Rosario,Joven,2.4,74100.0,1,1,0
+C0753,Cliente 753,25,Buenos Aires,PyME,12.7,17100.0,5,1,0
+C0754,Cliente 754,58,CABA,Premium,2.3,576450.0,4,0,0
+C0755,Cliente 755,56,CABA,Premium,3.2,353150.0,5,1,0
+C0756,Cliente 756,18,CABA,Retail,3.0,15000.0,3,1,0
+C0757,Cliente 757,20,Mendoza,Retail,4.1,33300.0,1,0,0
+C0758,Cliente 758,30,Buenos Aires,Retail,5.5,47100.0,4,1,0
+C0759,Cliente 759,45,Santa Fe,Joven,1.0,33200.0,1,1,0
+C0760,Cliente 760,66,CABA,PyME,3.0,7800.0,3,1,0
+C0761,Cliente 761,42,Córdoba,Retail,7.0,170800.0,1,1,0
+C0762,Cliente 762,50,Córdoba,Retail,2.5,41600.0,1,1,0
+C0763,Cliente 763,55,CABA,PyME,1.3,61300.0,2,0,0
+C0764,Cliente 764,70,CABA,Retail,4.3,25100.0,1,1,0
+C0765,Cliente 765,23,CABA,Retail,6.9,122100.0,5,1,0
+C0766,Cliente 766,61,Buenos Aires,PyME,0.3,80700.0,4,1,0
+C0767,Cliente 767,62,CABA,Retail,6.0,369200.0,2,1,0
+C0768,Cliente 768,49,Buenos Aires,Retail,6.9,123100.0,4,0,0
+C0769,Cliente 769,62,CABA,Premium,2.5,154700.0,4,0,0
+C0770,Cliente 770,64,Córdoba,PyME,16.4,19700.0,3,1,0
+C0771,Cliente 771,38,Córdoba,Premium,6.2,768250.0,3,1,0
+C0772,Cliente 772,33,Córdoba,Retail,5.9,39200.0,2,1,1
+C0773,Cliente 773,71,Buenos Aires,Retail,5.5,46300.0,3,1,0
+C0774,Cliente 774,38,Córdoba,Retail,0.7,46300.0,3,1,0
+C0775,Cliente 775,28,CABA,Premium,1.0,114800.0,3,1,0
+C0776,Cliente 776,54,CABA,PyME,2.5,47500.0,4,1,0
+C0777,Cliente 777,53,Mendoza,Retail,1.2,1076600.0,2,1,0
+C0778,Cliente 778,52,Buenos Aires,PyME,2.1,12400.0,4,1,0
+C0779,Cliente 779,36,Córdoba,Retail,8.8,17600.0,5,1,0
+C0780,Cliente 780,37,Córdoba,Retail,7.0,477600.0,4,1,0
+C0781,Cliente 781,35,CABA,Retail,4.0,34100.0,5,1,0
+C0782,Cliente 782,64,Buenos Aires,Retail,7.8,30500.0,1,1,0
+C0783,Cliente 783,58,Buenos Aires,Premium,6.1,989450.0,1,0,0
+C0784,Cliente 784,66,Mendoza,Premium,2.2,24850.0,5,1,0
+C0785,Cliente 785,31,CABA,Retail,0.9,205300.0,5,1,0
+C0786,Cliente 786,32,CABA,Premium,2.9,224350.0,4,1,0
+C0787,Cliente 787,48,CABA,Retail,5.3,120200.0,5,0,0
+C0788,Cliente 788,18,Córdoba,PyME,2.3,116900.0,2,0,0
+C0789,Cliente 789,70,Buenos Aires,Joven,4.4,23300.0,1,1,0
+C0790,Cliente 790,71,CABA,Retail,0.4,289800.0,1,1,0
+C0791,Cliente 791,71,Córdoba,Premium,5.5,91700.0,5,0,1
+C0792,Cliente 792,20,Tucumán,Retail,6.7,110600.0,3,1,1
+C0793,Cliente 793,33,Buenos Aires,Retail,4.9,383300.0,3,1,0
+C0794,Cliente 794,40,CABA,Retail,13.7,473700.0,5,1,0
+C0795,Cliente 795,28,CABA,PyME,7.0,40100.0,2,1,0
+C0796,Cliente 796,29,Córdoba,Premium,9.3,419650.0,3,1,0
+C0797,Cliente 797,27,CABA,Retail,10.8,34900.0,5,1,0
+C0798,Cliente 798,49,CABA,PyME,6.5,2560500.0,2,1,0
+C0799,Cliente 799,33,Santa Fe,Premium,4.5,675500.0,2,0,1
+C0800,Cliente 800,25,Santa Fe,PyME,0.0,67900.0,4,1,0
+C0801,Cliente 801,55,CABA,Premium,2.5,334950.0,2,0,0
+C0802,Cliente 802,29,Mendoza,Premium,3.4,386050.0,3,1,0
+C0803,Cliente 803,41,Córdoba,Retail,1.4,115300.0,3,1,1
+C0804,Cliente 804,45,CABA,Retail,1.5,41800.0,5,1,0
+C0805,Cliente 805,70,Buenos Aires,Joven,13.0,33100.0,5,0,0
+C0806,Cliente 806,25,Rosario,Retail,8.9,47700.0,2,1,0
+C0807,Cliente 807,45,Buenos Aires,Joven,7.6,10800.0,1,1,0
+C0808,Cliente 808,53,Buenos Aires,Premium,2.1,615650.0,4,0,0
+C0809,Cliente 809,43,Buenos Aires,Retail,0.1,18000.0,1,1,1
+C0810,Cliente 810,25,Córdoba,Retail,0.3,12200.0,2,0,0
+C0811,Cliente 811,67,Buenos Aires,Retail,1.5,58600.0,2,1,0
+C0812,Cliente 812,45,Buenos Aires,Joven,0.1,49300.0,1,0,0
+C0813,Cliente 813,45,Buenos Aires,Retail,0.1,87100.0,4,1,0
+C0814,Cliente 814,54,Buenos Aires,Retail,9.9,25500.0,1,1,0
+C0815,Cliente 815,58,Córdoba,Retail,4.9,33200.0,5,1,1
+C0816,Cliente 816,53,Córdoba,Retail,1.5,169100.0,3,1,0
+C0817,Cliente 817,44,CABA,Retail,0.6,154300.0,5,1,0
+C0818,Cliente 818,71,CABA,Retail,2.9,145000.0,3,1,0
+C0819,Cliente 819,34,Córdoba,PyME,0.0,63000.0,2,1,0
+C0820,Cliente 820,26,Buenos Aires,Retail,11.1,77100.0,4,1,0
+C0821,Cliente 821,50,CABA,Retail,2.1,84600.0,1,1,0
+C0822,Cliente 822,70,Rosario,Retail,2.1,22400.0,4,1,0
+C0823,Cliente 823,37,Córdoba,Retail,2.0,546400.0,1,0,0
+C0824,Cliente 824,30,Buenos Aires,Joven,0.3,441300.0,5,1,1
+C0825,Cliente 825,45,CABA,Premium,4.1,689850.0,5,1,0
+C0826,Cliente 826,65,CABA,Retail,5.3,31600.0,1,1,0
+C0827,Cliente 827,46,CABA,Premium,4.5,470400.0,4,1,0
+C0828,Cliente 828,30,Buenos Aires,Retail,0.6,259800.0,1,1,0
+C0829,Cliente 829,63,Buenos Aires,Retail,3.5,9600.0,2,1,0
+C0830,Cliente 830,52,Buenos Aires,Joven,3.4,760500.0,5,1,0
+C0831,Cliente 831,23,Tucumán,PyME,8.1,4400.0,2,0,1
+C0832,Cliente 832,35,Santa Fe,Joven,1.9,172300.0,5,1,0
+C0833,Cliente 833,68,Buenos Aires,Retail,1.9,529600.0,5,1,0
+C0834,Cliente 834,22,Buenos Aires,Premium,3.9,176750.0,3,1,1
+C0835,Cliente 835,64,Santa Fe,Retail,4.0,47800.0,2,1,0
+C0836,Cliente 836,42,Buenos Aires,Retail,2.5,163000.0,2,0,0
+C0837,Cliente 837,19,Buenos Aires,PyME,2.3,963000.0,3,1,0
+C0838,Cliente 838,27,Rosario,Retail,2.7,39300.0,4,1,1
+C0839,Cliente 839,47,Buenos Aires,PyME,7.9,18600.0,2,1,0
+C0840,Cliente 840,67,Córdoba,PyME,2.5,31700.0,1,1,0
+C0841,Cliente 841,62,Rosario,Retail,11.2,5800.0,3,1,0
+C0842,Cliente 842,22,CABA,Premium,2.8,805700.0,2,0,1
+C0843,Cliente 843,50,Buenos Aires,Premium,11.9,96950.0,4,1,0
+C0844,Cliente 844,71,Buenos Aires,Retail,7.2,43800.0,2,0,0
+C0845,Cliente 845,18,Mendoza,PyME,1.8,234300.0,5,0,0
+C0846,Cliente 846,35,Mendoza,Premium,8.0,119000.0,1,1,1
+C0847,Cliente 847,49,Santa Fe,Retail,0.5,187000.0,3,1,1
+C0848,Cliente 848,64,Buenos Aires,Premium,10.4,44100.0,5,0,1
+C0849,Cliente 849,66,Santa Fe,Joven,4.0,252200.0,4,0,0
+C0850,Cliente 850,28,Tucumán,Retail,0.2,100000.0,5,0,0
+C0851,Cliente 851,38,Córdoba,PyME,4.1,52400.0,5,1,0
+C0852,Cliente 852,43,Tucumán,Retail,14.6,72900.0,4,1,1
+C0853,Cliente 853,42,Mendoza,PyME,0.3,8700.0,5,0,0
+C0854,Cliente 854,39,Córdoba,PyME,3.2,70400.0,3,1,0
+C0855,Cliente 855,44,Córdoba,Retail,5.5,48400.0,2,0,0
+C0856,Cliente 856,66,CABA,Retail,6.6,9100.0,5,1,0
+C0857,Cliente 857,30,Buenos Aires,PyME,2.1,21900.0,3,1,0
+C0858,Cliente 858,50,Córdoba,Retail,0.9,49300.0,2,1,0
+C0859,Cliente 859,51,CABA,PyME,0.2,24100.0,2,0,0
+C0860,Cliente 860,58,Mendoza,Retail,3.5,1600.0,5,1,0
+C0861,Cliente 861,52,Rosario,PyME,2.4,300900.0,3,1,0
+C0862,Cliente 862,18,Santa Fe,PyME,11.9,48400.0,5,0,0
+C0863,Cliente 863,38,Buenos Aires,Joven,0.3,2000.0,4,1,0
+C0864,Cliente 864,65,Buenos Aires,Retail,4.6,1472500.0,2,0,0
+C0865,Cliente 865,23,Buenos Aires,Premium,0.1,1348900.0,5,1,0
+C0866,Cliente 866,45,Córdoba,Premium,0.8,124250.0,2,0,0
+C0867,Cliente 867,34,Santa Fe,Retail,2.4,16900.0,3,1,0
+C0868,Cliente 868,22,Tucumán,Retail,2.4,109600.0,1,0,0
+C0869,Cliente 869,48,CABA,Retail,4.6,81100.0,5,0,0
+C0870,Cliente 870,22,Tucumán,PyME,9.6,135000.0,5,1,0
+C0871,Cliente 871,55,Mendoza,Premium,4.1,59500.0,2,1,1
+C0872,Cliente 872,20,CABA,Retail,12.3,310700.0,3,1,0
+C0873,Cliente 873,70,Mendoza,Premium,8.5,102900.0,4,1,0
+C0874,Cliente 874,40,CABA,Retail,3.5,166200.0,3,0,0
+C0875,Cliente 875,54,Buenos Aires,Retail,7.2,18100.0,5,1,0
+C0876,Cliente 876,70,Córdoba,Joven,4.1,3179400.0,4,1,0
+C0877,Cliente 877,54,CABA,Joven,0.3,170000.0,3,1,0
+C0878,Cliente 878,27,Córdoba,Premium,5.4,15856750.0,1,0,0
+C0879,Cliente 879,27,Córdoba,Retail,0.4,207200.0,2,0,0
+C0880,Cliente 880,36,Córdoba,PyME,3.6,25800.0,3,1,1
+C0881,Cliente 881,34,CABA,Retail,4.9,207700.0,3,1,0
+C0882,Cliente 882,38,CABA,Retail,0.3,231200.0,1,1,0
+C0883,Cliente 883,31,Córdoba,Retail,1.0,104800.0,5,1,0
+C0884,Cliente 884,26,CABA,Premium,9.9,539350.0,2,1,0
+C0885,Cliente 885,63,CABA,Premium,3.8,656950.0,3,1,1
+C0886,Cliente 886,18,Buenos Aires,Retail,1.1,13500.0,4,1,0
+C0887,Cliente 887,68,Córdoba,Premium,4.7,42350.0,3,1,1
+C0888,Cliente 888,62,Buenos Aires,Joven,3.6,18200.0,2,1,0
+C0889,Cliente 889,30,Córdoba,Retail,2.8,72500.0,3,1,0
+C0890,Cliente 890,21,Santa Fe,PyME,15.0,42800.0,1,1,0
+C0891,Cliente 891,18,CABA,PyME,4.6,13900.0,3,1,0
+C0892,Cliente 892,66,CABA,Retail,1.9,191600.0,3,1,0
+C0893,Cliente 893,57,Rosario,Retail,6.4,91500.0,4,1,0
+C0894,Cliente 894,49,Mendoza,Premium,8.6,269850.0,1,1,0
+C0895,Cliente 895,51,Tucumán,Premium,0.5,142450.0,1,1,0
+C0896,Cliente 896,45,Santa Fe,PyME,0.9,34000.0,3,0,0
+C0897,Cliente 897,48,Buenos Aires,Retail,1.0,16900.0,4,1,0
+C0898,Cliente 898,25,Buenos Aires,Joven,4.7,242900.0,3,1,0
+C0899,Cliente 899,56,CABA,Retail,3.7,20800.0,3,1,0
+C0900,Cliente 900,43,Buenos Aires,Retail,3.9,82000.0,2,1,0
+C0901,Cliente 901,51,CABA,Premium,11.3,2535050.0,2,1,0
+C0902,Cliente 902,71,CABA,Retail,6.0,36400.0,4,1,1
+C0903,Cliente 903,71,CABA,Retail,0.5,253000.0,5,1,1
+C0904,Cliente 904,20,Santa Fe,Retail,1.7,140500.0,2,1,0
+C0905,Cliente 905,67,Santa Fe,Retail,2.3,95500.0,5,1,1
+C0906,Cliente 906,29,CABA,Retail,2.0,114200.0,1,1,0
+C0907,Cliente 907,18,Mendoza,Joven,4.4,51900.0,2,1,0
+C0908,Cliente 908,71,CABA,Retail,8.9,63100.0,2,1,0
+C0909,Cliente 909,61,Mendoza,PyME,1.5,26300.0,4,1,0
+C0910,Cliente 910,22,Buenos Aires,PyME,3.2,63700.0,5,0,0
+C0911,Cliente 911,47,Rosario,Joven,6.2,24900.0,2,1,0
+C0912,Cliente 912,47,Córdoba,Retail,2.2,270600.0,2,1,0
+C0913,Cliente 913,34,CABA,PyME,0.7,4700.0,4,0,0
+C0914,Cliente 914,65,Buenos Aires,Premium,2.6,431200.0,4,1,0
+C0915,Cliente 915,64,CABA,Premium,0.2,347200.0,5,1,1
+C0916,Cliente 916,40,Buenos Aires,Premium,11.4,303100.0,1,1,0
+C0917,Cliente 917,32,Buenos Aires,PyME,0.3,278400.0,1,0,0
+C0918,Cliente 918,54,Córdoba,Retail,2.3,39000.0,3,0,0
+C0919,Cliente 919,38,CABA,PyME,3.0,87800.0,2,1,0
+C0920,Cliente 920,31,Córdoba,Premium,16.9,16100.0,5,1,0
+C0921,Cliente 921,19,Tucumán,PyME,0.7,32100.0,2,1,0
+C0922,Cliente 922,28,CABA,Joven,0.5,216100.0,5,1,0
+C0923,Cliente 923,68,Córdoba,Retail,0.0,8000.0,5,1,0
+C0924,Cliente 924,56,Buenos Aires,Joven,0.7,76100.0,5,1,0
+C0925,Cliente 925,55,Santa Fe,Retail,0.9,21700.0,2,1,0
+C0926,Cliente 926,51,CABA,Retail,4.0,50700.0,4,0,0
+C0927,Cliente 927,55,Rosario,Retail,1.0,23700.0,2,1,0
+C0928,Cliente 928,67,Mendoza,Retail,0.1,9200.0,5,1,1
+C0929,Cliente 929,51,CABA,Premium,7.0,373800.0,3,1,0
+C0930,Cliente 930,35,Buenos Aires,Retail,1.8,55600.0,1,0,1
+C0931,Cliente 931,47,Mendoza,Retail,1.7,150100.0,5,1,0
+C0932,Cliente 932,32,Santa Fe,Joven,1.4,197100.0,3,1,1
+C0933,Cliente 933,44,Buenos Aires,PyME,14.8,376200.0,4,1,0
+C0934,Cliente 934,68,Buenos Aires,PyME,0.7,73100.0,5,1,0
+C0935,Cliente 935,51,Santa Fe,PyME,9.1,401500.0,3,0,1
+C0936,Cliente 936,69,Buenos Aires,PyME,6.0,13900.0,5,1,0
+C0937,Cliente 937,55,Tucumán,Retail,0.3,234100.0,2,1,0
+C0938,Cliente 938,50,CABA,Retail,17.3,119300.0,3,1,0
+C0939,Cliente 939,41,Buenos Aires,PyME,1.3,84900.0,2,1,0
+C0940,Cliente 940,32,Santa Fe,Retail,0.4,116700.0,2,0,1
+C0941,Cliente 941,47,CABA,Premium,7.1,49700.0,3,1,0
+C0942,Cliente 942,59,CABA,Retail,4.9,9900.0,1,1,0
+C0943,Cliente 943,68,Buenos Aires,Retail,3.8,778200.0,3,1,0
+C0944,Cliente 944,34,Buenos Aires,Premium,0.7,162750.0,1,1,0
+C0945,Cliente 945,22,Córdoba,Premium,2.6,159250.0,5,0,0
+C0946,Cliente 946,46,CABA,Premium,6.1,40250.0,5,1,0
+C0947,Cliente 947,21,Córdoba,Premium,1.4,22750.0,3,0,0
+C0948,Cliente 948,27,Santa Fe,Retail,1.5,52400.0,5,1,0
+C0949,Cliente 949,34,Córdoba,Retail,0.0,35900.0,4,1,1
+C0950,Cliente 950,27,Buenos Aires,PyME,0.8,60000.0,2,1,0
+C0951,Cliente 951,34,CABA,Premium,8.3,238700.0,2,1,0
+C0952,Cliente 952,37,Tucumán,Retail,2.3,2506000.0,1,1,0
+C0953,Cliente 953,41,Santa Fe,PyME,16.6,36000.0,5,1,0
+C0954,Cliente 954,22,Córdoba,Retail,2.0,640400.0,1,1,0
+C0955,Cliente 955,51,Buenos Aires,Retail,5.0,702900.0,2,1,1
+C0956,Cliente 956,23,CABA,Retail,1.3,185400.0,2,1,0
+C0957,Cliente 957,70,Santa Fe,PyME,1.8,42100.0,5,1,1
+C0958,Cliente 958,19,Mendoza,Premium,0.8,27300.0,4,1,0
+C0959,Cliente 959,30,Córdoba,Retail,1.7,122600.0,4,1,0
+C0960,Cliente 960,60,Santa Fe,PyME,3.2,276000.0,5,1,0
+C0961,Cliente 961,60,Santa Fe,Retail,19.2,823700.0,5,0,0
+C0962,Cliente 962,65,Buenos Aires,Retail,4.4,14400.0,1,1,0
+C0963,Cliente 963,28,CABA,Retail,0.9,41600.0,5,0,1
+C0964,Cliente 964,68,Buenos Aires,Retail,0.2,14500.0,4,1,0
+C0965,Cliente 965,64,Buenos Aires,Retail,0.5,23200.0,5,1,1
+C0966,Cliente 966,40,Mendoza,Premium,3.3,567700.0,1,1,0
+C0967,Cliente 967,33,CABA,PyME,5.8,21600.0,1,1,0
+C0968,Cliente 968,48,CABA,Premium,11.3,60900.0,1,1,0
+C0969,Cliente 969,28,Buenos Aires,Retail,0.1,197900.0,1,1,0
+C0970,Cliente 970,71,CABA,Retail,3.0,117700.0,3,1,1
+C0971,Cliente 971,33,Buenos Aires,Retail,2.5,101200.0,5,1,0
+C0972,Cliente 972,25,Buenos Aires,Retail,4.3,22500.0,2,1,0
+C0973,Cliente 973,21,Córdoba,PyME,3.3,416500.0,5,0,0
+C0974,Cliente 974,57,Buenos Aires,Retail,4.6,61200.0,3,1,0
+C0975,Cliente 975,21,Córdoba,PyME,4.3,2127100.0,1,1,0
+C0976,Cliente 976,42,Buenos Aires,PyME,0.5,76200.0,3,1,0
+C0977,Cliente 977,20,Buenos Aires,Retail,6.4,1800.0,4,1,0
+C0978,Cliente 978,49,Buenos Aires,PyME,0.5,1700.0,4,0,0
+C0979,Cliente 979,20,Córdoba,Premium,4.8,534450.0,5,1,0
+C0980,Cliente 980,44,Córdoba,Premium,2.2,1473850.0,5,0,0
+C0981,Cliente 981,46,CABA,Premium,2.9,64750.0,2,1,0
+C0982,Cliente 982,49,CABA,Retail,9.3,1399300.0,2,1,0
+C0983,Cliente 983,67,Santa Fe,Retail,8.8,725400.0,4,0,0
+C0984,Cliente 984,68,Buenos Aires,Retail,6.8,82100.0,1,0,0
+C0985,Cliente 985,36,CABA,Retail,2.9,134500.0,3,1,0
+C0986,Cliente 986,38,Santa Fe,Premium,5.3,801850.0,2,0,0
+C0987,Cliente 987,22,Córdoba,Retail,2.9,1019700.0,2,1,0
+C0988,Cliente 988,35,CABA,Joven,8.1,166600.0,1,0,0
+C0989,Cliente 989,45,Tucumán,PyME,2.1,79400.0,1,1,0
+C0990,Cliente 990,59,Santa Fe,Retail,14.1,164100.0,5,1,0
+C0991,Cliente 991,39,Buenos Aires,Retail,10.8,134100.0,3,1,0
+C0992,Cliente 992,38,Córdoba,PyME,5.4,239600.0,1,1,0
+C0993,Cliente 993,23,Córdoba,PyME,1.3,5700.0,2,1,0
+C0994,Cliente 994,18,CABA,PyME,0.6,96200.0,2,1,0
+C0995,Cliente 995,22,CABA,Retail,7.7,119500.0,4,1,0
+C0996,Cliente 996,58,CABA,Retail,0.7,53700.0,1,1,0
+C0997,Cliente 997,29,Córdoba,Retail,7.7,194100.0,5,1,0
+C0998,Cliente 998,43,CABA,Retail,2.7,1068500.0,3,1,0
+C0999,Cliente 999,63,Mendoza,PyME,2.1,73700.0,5,1,0
+C1000,Cliente 1000,51,Córdoba,PyME,9.3,169000.0,2,1,0

@@ -11,9 +11,12 @@ CLAUDE.md
 # Para publicarlas al cierre del curso, borrá esta línea y hacé commit.
 Soluciones_Clase_*.ipynb
 
-# Examen — la clave nunca va al repo público
-Clase 6/examen/Clave_*
-Clase 6/examen/*GIFT*
+# Examen — la carpeta entera es docente: banco de preguntas, clave y archivo
+# de importación a la plataforma. Nada de esto puede ver un alumno.
+Clase 6/examen/
+
+# Salida que genera el notebook de Clase 5 al ejecutarse
+transacciones_limpias.csv
 
 # ─────────────────────────────────────────────────────────────
 # Datasets duplicados por clase — la fuente única es /datasets.

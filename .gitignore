@@ -34,3 +34,11 @@ Clase */data/
 __pycache__/
 *.pyc
 .venv/
+
+# ─────────────────────────────────────────────────────────────
+# Roster de alumnos — datos personales (email, legajo), nunca se publica
+# ─────────────────────────────────────────────────────────────
+Alumnos/
+
+# Backups locales
+*.bak

@@ -40,7 +40,10 @@ un dataset real, explorarlo, filtrarlo, medirlo y convertir el resultado en una 
 | `Clase_2_Practica_Individual.ipynb` | 10 ejercicios nuevos, para resolver solos | Sí |
 | `Soluciones_Clase_2.ipynb` | Soluciones + lectura de negocio + criterios de corrección | **No — solo docente** |
 | `Guion_Clase_2.md` | Guión completo, tiempos y notas de dictado | Solo docente |
-| `Deck_Outline_Clase_2.md` | Outline del deck (20 slides) | Solo docente |
+| `PAD-Clase-2.pdf` | Deck de la clase (8 slides) | Sí |
+| `Deck_Clase_2_PARA_GAMMA.md` | Fuente del deck en markdown, para regenerarlo | Solo docente |
+| `Deck_Clase_2.html` | Fuente HTML desde la que se exporta el PDF | Solo docente |
+| `Deck_Outline_Clase_2.md` | Outline viejo (20 slides), previo al rediseño | Solo docente |
 | `data/clientes.csv` | Dataset de 1.000 clientes | Se descarga solo desde el repo |
 
 ## Dataset: `clientes.csv`

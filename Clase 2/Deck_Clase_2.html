@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Clase 2 — ¿Quién se nos está yendo?</title>
+<style>
+  @page { size: 1280px 720px; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root{
+    --ink:#12181f;
+    --muted:#5b6672;
+    --line:#dfe4ea;
+    --accent:#0b6b5f;
+    --accent-soft:#e8f2f0;
+    --warm:#b4531f;
+    --bg:#ffffff;
+    --panel:#f6f8f9;
+  }
+  html,body{ background:#e9edf0; }
+  body{
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+  }
+  .slide{
+    width:1280px; height:720px;
+    background:var(--bg);
+    padding:52px 72px 62px;
+    display:flex; flex-direction:column;
+    page-break-after:always;
+    position:relative;
+    overflow:hidden;
+  }
+  .slide:last-child{ page-break-after:auto; }
+
+  .eyebrow{
+    font-size:15px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:14px;
+  }
+  h1{ font-size:52px; line-height:1.08; font-weight:800; letter-spacing:-.02em; }
+  h2{ font-size:30px; line-height:1.2; font-weight:700; color:var(--muted); margin-top:10px;}
+  .rule{ width:88px; height:5px; background:var(--accent); border-radius:3px; margin:22px 0 26px; }
+  p, li{ font-size:21px; line-height:1.5; }
+  .lead{ font-size:24px; line-height:1.45; }
+  strong{ font-weight:700; }
+  em{ font-style:italic; color:var(--muted); }
+  code{
+    font-family:"SF Mono",Menlo,Consolas,monospace; font-size:.92em;
+    background:var(--accent-soft); color:var(--accent);
+    padding:2px 8px; border-radius:5px; font-weight:600;
+  }
+  ul{ list-style:none; }
+  li{ position:relative; padding-left:26px; margin-bottom:12px; }
+  li:before{
+    content:""; position:absolute; left:2px; top:12px;
+    width:8px; height:8px; border-radius:50%; background:var(--accent);
+  }
+  table{ width:100%; border-collapse:collapse; margin:6px 0 4px; }
+  th{
+    text-align:left; font-size:14px; font-weight:700; letter-spacing:.1em;
+    text-transform:uppercase; color:var(--muted);
+    padding:0 16px 10px 0; border-bottom:2px solid var(--line);
+  }
+  td{
+    font-size:19px; line-height:1.35; padding:12px 16px 12px 0;
+    border-bottom:1px solid var(--line); vertical-align:top;
+  }
+  tr td:first-child{ font-weight:700; white-space:nowrap; }
+  .quote{
+    margin-top:auto; background:var(--panel); border-left:5px solid var(--accent);
+    padding:20px 26px; border-radius:0 10px 10px 0; font-size:21px; line-height:1.45;
+  }
+  .quote.warm{ border-left-color:var(--warm); }
+  .num{ font-variant-numeric:tabular-nums; }
+  .pagenum{
+    position:absolute; right:34px; bottom:20px;
+    font-size:13px; color:#9aa5b1; font-variant-numeric:tabular-nums;
+  }
+  .brand{
+    position:absolute; left:72px; bottom:20px;
+    font-size:13px; color:#9aa5b1; letter-spacing:.04em;
+  }
+
+  /* portada */
+  .cover{ justify-content:center; background:linear-gradient(150deg,#0d2b2a 0%, #12403a 55%, #0b6b5f 100%); color:#fff; }
+  .cover h1{ font-size:76px; max-width:900px; }
+  .cover .rule{ background:#7fd4c1; }
+  .cover .meta{ font-size:22px; color:#bfe3da; line-height:1.6; }
+  .cover .kicker{ font-size:17px; letter-spacing:.18em; text-transform:uppercase; color:#7fd4c1; font-weight:700; margin-bottom:20px;}
+
+  /* carátulas de notebook */
+  .divider{ justify-content:center; background:var(--panel); }
+  .divider .chip{
+    display:inline-block; background:var(--accent); color:#fff;
+    font-size:15px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+    padding:8px 16px; border-radius:6px; margin-bottom:22px;
+  }
+  .divider h1{ font-size:60px; max-width:1000px; }
+  .divider .nb{
+    display:inline-block; margin:26px 0 22px;
+    font-family:"SF Mono",Menlo,Consolas,monospace; font-size:24px; font-weight:600;
+    background:#fff; border:2px solid var(--accent); color:var(--accent);
+    padding:12px 22px; border-radius:10px;
+  }
+  .divider p{ max-width:900px; }
+  .two{ display:grid; grid-template-columns:1fr 1fr; gap:34px; align-items:start; }
+  .card{ background:var(--panel); border-radius:12px; padding:22px 26px; }
+  .card h3{ font-size:19px; font-weight:800; margin-bottom:10px; letter-spacing:.02em;}
+  .steps{ counter-reset:s; list-style:none; }
+  .steps li{ padding-left:52px; margin-bottom:16px; font-size:22px; }
+  .steps li:before{
+    counter-increment:s; content:counter(s);
+    width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff;
+    font-size:18px; font-weight:800; display:flex; align-items:center; justify-content:center;
+    left:0; top:-2px;
+  }
+  .hl{ background:#fff3cd; padding:1px 6px; border-radius:4px; font-weight:700; }
+  .dense td{ padding:9px 16px 9px 0; font-size:18px; }
+  .dense li{ font-size:19px; margin-bottom:9px; }
+  .dense h1{ font-size:46px; }
+  .break-row td{ background:var(--accent-soft); font-weight:700; }
+</style>
+</head>
+<body>
+
+<!-- 1 · Portada -->
+<section class="slide cover">
+  <div class="kicker">Maestría en Fintech · ITBA · 2026</div>
+  <h1>¿Quién se nos está yendo?</h1>
+  <div class="rule"></div>
+  <div class="meta">
+    <strong>Programación para el Análisis de Datos</strong><br>
+    Clase 2 · Churn y tu primer análisis de datos
+  </div>
+</section>
+
+<!-- 2 · Agenda -->
+<section class="slide">
+  <div class="eyebrow">Clase 2 · 19:00 a 22:00</div>
+  <h1>Agenda de hoy</h1>
+  <div class="rule"></div>
+  <table>
+    <tr><th style="width:118px">Hora</th><th>Bloque</th><th style="width:110px">Tiempo</th></tr>
+    <tr><td class="num">19:00</td><td>Apertura — cómo trabajamos de acá en adelante</td><td class="num">10'</td></tr>
+    <tr><td class="num">19:10</td><td><strong>Repaso de Python</strong> — a la notebook, despacio</td><td class="num">30'</td></tr>
+    <tr><td class="num">19:40</td><td><strong>¿Qué es el churn?</strong> — el problema antes que la métrica</td><td class="num">20'</td></tr>
+    <tr><td class="num">20:00</td><td><strong>Práctica guiada</strong> — la resolvemos juntos</td><td class="num">60'</td></tr>
+    <tr class="break-row"><td class="num">21:00</td><td>CORTE</td><td class="num">10'</td></tr>
+    <tr><td class="num">21:10</td><td><strong>Práctica individual</strong> — la resolvés vos, con Gemini</td><td class="num">45'</td></tr>
+    <tr><td class="num">21:55</td><td>Cierre y tarea</td><td class="num">5'</td></tr>
+  </table>
+  <div class="quote">
+    De acá en adelante todas las clases tienen esta misma forma: <strong>teoría → guiada → individual</strong>.
+    La parte individual es la que hace que el conocimiento quede.
+  </div>
+  <div class="brand">PAD · Clase 2</div><div class="pagenum">2</div>
+</section>
+
+<!-- 3 · Carátula repaso -->
+<section class="slide divider">
+  <div><span class="chip">Bloque 1 · 30 minutos</span></div>
+  <h1>Repaso: los bloques básicos de Python</h1>
+  <div><span class="nb">Clase_2_Repaso_Python.ipynb</span></div>
+  <p class="lead">
+    La clase pasada esto lo pasamos rápido, sobre el final. Hoy lo hacemos despacio:
+    <strong>clase → objeto → método</strong>, y por qué en Python el dato trae sus acciones adentro.
+  </p>
+  <div class="brand">PAD · Clase 2</div><div class="pagenum">3</div>
+</section>
+
+<!-- 4 · Qué es churn -->
+<section class="slide">
+  <div class="eyebrow">Bloque 2 · El problema antes que la métrica</div>
+  <h1>¿Qué es el churn?</h1>
+  <div class="rule"></div>
+  <p class="lead" style="margin-bottom:20px">
+    <strong>Churn</strong> (fuga, <em>attrition</em>) es la pérdida de un cliente.
+    Suena obvio hasta que hay que marcarlo en una base:
+  </p>
+  <ul>
+    <li>El que <strong>cerró la cuenta</strong> formalmente → sí</li>
+    <li>El que <strong>no cerró nada</strong>, pero hace ocho meses que no opera → <strong>¿?</strong></li>
+    <li>El que dejó <strong>$500 para no cerrarla</strong>, pero cobra el sueldo en otro banco → <strong>¿?</strong></li>
+  </ul>
+  <p style="margin-top:18px">
+    Retener cuesta una fracción de lo que cuesta adquirir. Pero el que se va de una billetera
+    no avisa, no reclama y no vuelve.
+  </p>
+  <div class="quote">
+    <strong>En servicios financieros casi nadie se despide: se va sin avisar.</strong><br>
+    Por eso el churn no es un dato que te viene dado — es una <strong>definición que alguien tuvo que tomar</strong>.
+  </div>
+  <div class="brand">PAD · Clase 2</div><div class="pagenum">4</div>
+</section>
+
+<!-- 5 · Definirlo -->
+<section class="slide">
+  <div class="eyebrow">Bloque 2 · Cómo se define</div>
+  <h1>Definirlo es una decisión de negocio</h1>
+  <div class="rule" style="margin:18px 0 20px"></div>
+  <table>
+    <tr><th style="width:280px">Definición</th><th>Qué captura</th><th>Qué se le escapa</th></tr>
+    <tr><td>Baja formal</td><td>Certeza total</td><td>Llega tardísimo: ya no hay nada que hacer</td></tr>
+    <tr><td>Sin actividad 90 días</td><td>Detecta temprano</td><td>Confunde estacionalidad con fuga</td></tr>
+    <tr><td>Caída sostenida de saldo</td><td>Anticipa la salida</td><td>Difícil de definir sin ambigüedad</td></tr>
+    <tr><td>Dejó de ser banco principal</td><td>Lo que de verdad importa</td><td>Requiere datos que no siempre tenés</td></tr>
+  </table>
+  <div class="two" style="margin-top:22px">
+    <div class="card">
+      <h3>Conservadora</h3>
+      <p style="font-size:19px">Certeza, pero <strong>llegás tarde</strong>: cuando lo detectás ya no hay nada que ofrecer.</p>
+    </div>
+    <div class="card">
+      <h3>Temprana</h3>
+      <p style="font-size:19px">Accionable, pero con <strong>falsos positivos</strong> — beneficios regalados a quien no se pensaba ir.</p>
+    </div>
+  </div>
+  <div class="quote warm" style="margin-top:20px">
+    Cambiar la ventana de 90 a 180 días puede <strong>duplicar o partir al medio</strong> tu tasa de churn.
+    El negocio no cambió: cambió la definición.
+    <strong>La primera pregunta ante cualquier tasa no es cuánto da, es cómo la definiste.</strong>
+  </div>
+  <div class="brand">PAD · Clase 2</div><div class="pagenum">5</div>
+</section>
+
+<!-- 6 · Qué se hace con el dato -->
+<section class="slide dense">
+  <div class="eyebrow">Bloque 2 · Casos de uso</div>
+  <h1>¿Y qué se hace con el dato?</h1>
+  <div class="rule" style="margin:18px 0 18px"></div>
+  <table>
+    <tr><th style="width:210px">Uso</th><th style="width:330px">La pregunta que responde</th><th>Qué se hace</th></tr>
+    <tr><td>Diagnóstico</td><td>¿Qué segmento se está yendo?</td><td>Cortar la tasa por segmento, antigüedad y canal</td></tr>
+    <tr><td>Anticipación</td><td>¿Quién se va a ir el mes que viene?</td><td>Un score de propensión sobre señales tempranas</td></tr>
+    <tr><td>Retención</td><td>¿A quién llamamos, con qué presupuesto?</td><td>Priorizar por <strong>valor en riesgo</strong>, no por tasa</td></tr>
+    <tr><td>Producto</td><td>¿Por qué se van?</td><td>Atacar la causa: onboarding, comisiones, fricción</td></tr>
+  </table>
+  <p style="font-size:15px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:24px 0 12px">
+    Cómo se gestiona en la práctica
+  </p>
+  <ul>
+    <li><strong>Segmentá siempre.</strong> <em>"La cartera tiene 20% de churn"</em> no habilita ninguna decisión. <span class="hl">38% en Joven y 7% en Premium</span> son dos problemas distintos.</li>
+    <li><strong>Separá al que nunca se activó.</strong> Abrió por una promo y jamás usó la cuenta: eso no es churn, es una adquisición que nunca terminó de ocurrir.</li>
+    <li><strong>Ordená por plata, no por porcentaje.</strong> El segmento que más fuga puede ser el que menos valor pone en riesgo.</li>
+  </ul>
+  <div class="brand">PAD · Clase 2</div><div class="pagenum">6</div>
+</section>
+
+<!-- 7 · Carátula guiada -->
+<section class="slide divider">
+  <div><span class="chip">Bloque 3 · 60 minutos</span></div>
+  <h1>Práctica guiada</h1>
+  <div><span class="nb">Clase_2_Practica_Guiada.ipynb</span></div>
+  <p class="lead" style="margin-bottom:18px">
+    <strong>1.000 clientes de una fintech argentina.</strong> La pregunta:
+    <em>¿qué tipo de cliente tiene más probabilidad de irse?</em>
+  </p>
+  <p class="lead">
+    El recorrido: <strong>cargar → explorar → filtrar → medir → ver</strong>, y cerrar con una recomendación.
+  </p>
+  <div class="quote" style="margin-top:34px;background:#fff">
+    Antes de escribir una sola línea: <strong>Archivo → Guardar una copia en Drive.</strong>
+  </div>
+  <div class="brand">PAD · Clase 2</div><div class="pagenum">7</div>
+</section>
+
+<!-- 8 · Copia en Colab -->
+<section class="slide">
+  <div class="eyebrow">Bloque 4 · Práctica individual · 45 minutos</div>
+  <h1>Antes de ejecutar: hacé tu copia</h1>
+  <div class="rule" style="margin:16px 0 18px"></div>
+  <p class="lead" style="margin-bottom:20px">
+    La notebook que comparto es <strong>el original del curso</strong>. Si escribís ahí, se pisan entre todos
+    y se pierde el trabajo.
+  </p>
+  <ol class="steps">
+    <li>Menú <code>Archivo</code> → <code>Guardar una copia en Drive</code></li>
+    <li>Se abre una pestaña nueva que dice <em>Copia de…</em> — <strong>esa es la tuya</strong></li>
+    <li>Clic en el nombre, arriba a la izquierda → renombrala <code>Clase2_Individual_TuNombre</code></li>
+  </ol>
+  <p style="margin-top:4px"><strong>Y recién ahí ejecutá.</strong> La pestaña del original, cerrala.</p>
+  <div class="quote" style="margin-top:22px">
+    Es el mismo reflejo que <strong>"Guardar como"</strong> antes de tocar el Excel compartido del equipo: nadie edita el original.
+    Tu copia queda en tu Drive, carpeta <code>Colab Notebooks</code>, y se guarda sola.<br>
+    <span style="display:inline-block;margin-top:10px">
+      <strong>Las reglas del bloque:</strong> una pregunta por vez · cada ejercicio cierra con una lectura de negocio ·
+      <strong>Gemini es copiloto, no piloto</strong> — pedile sintaxis y errores, nunca criterio ni conclusiones.
+    </span>
+  </div>
+  <div class="brand">PAD · Clase 2</div><div class="pagenum">8</div>
+</section>
+
+</body>
+</html>

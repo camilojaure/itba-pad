@@ -42,3 +42,7 @@ Alumnos/
 
 # Backups locales
 *.bak
+
+# Material de Gamma (solo docente)
+Prompts_Gamma_*.md
+Deck_Clase_*_PARA_GAMMA.md

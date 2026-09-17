@@ -23,7 +23,7 @@ Los datasets se descargan solos desde este mismo repositorio — **no tenés que
 |---|------|----------|---------|
 | 1 | El ciclo del dato a la decisión | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%201/Clase_1_Intro.ipynb) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%201/Clase_1_EstructurasDatos.ipynb) | Churn bancario (externo) |
 | 2 | Tu primer análisis de datos | **Repaso** [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%202/Clase_2_Repaso_Python.ipynb) · **Guiada** [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%202/Clase_2_Practica_Guiada.ipynb) · **Individual** [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%202/Clase_2_Practica_Individual.ipynb) | `clientes.csv` |
-| 3 | Segmentación y series de tiempo | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%203/Clase_3_Segmentacion_TimeSeries.ipynb) | `transacciones.csv` |
+| 3 | Segmentación y series de tiempo | **Guiada** [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%203/Clase_3_Practica_Guiada.ipynb) · **Individual** [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%203/Clase_3_Practica_Individual.ipynb) | `transacciones.csv` |
 | 4 | Joins: combinando fuentes | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%204/Clase_4_Joins.ipynb) | `clientes` + `tarjetas` + `transacciones` |
 | 5 | Datos reales = datos sucios | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%205/Clase_5_Datos_Sucios.ipynb) | `transacciones_sucias.csv` |
 | 6 | Evaluación y cierre | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%206/Clase_6_Examen.ipynb) | `portafolio_prestamos.csv` |
@@ -38,7 +38,7 @@ así que se pueden combinar. Son sintéticos: no hay información real de ningun
 | Archivo | Filas | Descripción |
 |---|---|---|
 | `clientes.csv` | 1.000 | Cartera de clientes: segmento, provincia, balance, churn |
-| `tarjetas.csv` | 1.534 | Tarjetas emitidas, con su límite y fecha de emisión |
+| `tarjetas.csv` | 2.110 | Tarjetas emitidas, con su límite y fecha de emisión |
 | `transacciones.csv` | ~29.000 | Movimientos de 2024, con categoría de gasto y monto |
 | `transacciones_sucias.csv` | ~29.900 | La misma tabla, degradada a propósito: nulos, duplicados, outliers |
 | `portafolio_prestamos.csv` | 800 | Cartera de préstamos con estado de mora (Clase 6) |

@@ -25,7 +25,7 @@ Los datasets se descargan solos desde este mismo repositorio — **no tenés que
 | 2 | Tu primer análisis de datos | [![Repaso](https://img.shields.io/badge/Repaso-Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%202/Clase_2_Repaso_Python.ipynb) [![Guiada](https://img.shields.io/badge/Guiada-Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%202/Clase_2_Practica_Guiada.ipynb) [![Individual](https://img.shields.io/badge/Individual-Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%202/Clase_2_Practica_Individual.ipynb) | `clientes.csv` |
 | 3 | Segmentación y series de tiempo | [![Guiada](https://img.shields.io/badge/Guiada-Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%203/Clase_3_Practica_Guiada.ipynb) [![Individual](https://img.shields.io/badge/Individual-Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%203/Clase_3_Practica_Individual.ipynb) | `transacciones.csv` |
 | 4 | Joins: combinando fuentes | [![Guiada](https://img.shields.io/badge/Guiada-Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%204/Clase_4_Practica_Guiada.ipynb) [![Individual](https://img.shields.io/badge/Individual-Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%204/Clase_4_Practica_Individual.ipynb) | `clientes` + `tarjetas` + `transacciones` |
-| 5 | Datos reales = datos sucios | [![Notebook](https://img.shields.io/badge/Notebook-Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%205/Clase_5_Datos_Sucios.ipynb) | `transacciones_sucias.csv` |
+| 5 | Datos reales = datos sucios | [![Guiada](https://img.shields.io/badge/Guiada-Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%205/Clase_5_Practica_Guiada.ipynb) [![Individual](https://img.shields.io/badge/Individual-Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%205/Clase_5_Practica_Individual.ipynb) | `transacciones_sucias.csv` |
 | 6 | Evaluación y cierre | [![Examen](https://img.shields.io/badge/Examen-Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/camilojaure/itba-pad/blob/main/Clase%206/Clase_6_Examen.ipynb) | `portafolio_prestamos.csv` |
 ---
 
@@ -63,6 +63,8 @@ df = pd.read_csv(DATOS + 'clientes.csv')
 
 - McKinney, W. (2022). *Python for Data Analysis* (3ra ed.). O'Reilly.
 - VanderPlas, J. (2023). *Python Data Science Handbook* (2da ed.). O'Reilly.
+
+Lecturas por clase: [Clase 5 — Datos sucios](Clase%205/Lecturas_Clase_5.md)
 
 ---
 

@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>PAD · Clase 5 · Datos reales = datos sucios</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  @page { size: 960px 540px; margin: 0; }
+  :root{
+    --ink:#1b1f24; --muted:#5b6470; --line:#c9ced4; --navy:#0f4c81; --cyan:#1aa6e0;
+    --teal:#2f5c6e; --chip:#dff1fb; --yellow:#fbf1b3; --yellow-ink:#8a6d00; --code:#eef0f2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Nunito Sans',sans-serif;color:var(--ink);background:#fff}
+  .s{width:960px;height:540px;position:relative;overflow:hidden;page-break-after:always;padding:36px 56px 40px;display:flex;flex-direction:column;justify-content:center}
+  .s:last-child{page-break-after:auto}
+  .logo{position:absolute;left:18px;bottom:12px;width:44px;opacity:.95}
+  .pg{position:absolute;right:22px;bottom:14px;font-size:10px;color:#9aa1a9}
+  h1{font-weight:300;font-size:40px;line-height:1.12;margin-bottom:18px;letter-spacing:-.2px}
+  h2{font-weight:300;font-size:22px;margin-bottom:12px}
+  p{font-size:17px;line-height:1.45;margin-bottom:10px}
+  ul{margin:4px 0 12px 0;list-style:none}
+  li{font-size:16.5px;line-height:1.4;margin-bottom:7px;padding-left:18px;position:relative}
+  li:before{content:"";position:absolute;left:2px;top:9px;width:7px;height:7px;border-radius:2px;background:var(--cyan)}
+  code{font-family:'JetBrains Mono',monospace;font-size:12.5px;background:var(--code);padding:1px 5px;border-radius:4px}
+  table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:6px;margin:4px 0 14px;font-size:15px}
+  th,td{text-align:left;padding:9px 14px;border-bottom:1px solid var(--line)}
+  th{font-weight:700}
+  tr:last-child td{border-bottom:none}
+  tr.hl td{font-weight:700}
+  .note{background:var(--yellow);border-radius:6px;padding:12px 16px 12px 42px;font-size:15px;line-height:1.45;position:relative;margin-top:6px}
+  .note:before{content:"⚠";position:absolute;left:15px;top:10px;color:var(--yellow-ink);font-size:14px}
+  .quote{border-left:3px solid var(--cyan);padding:4px 0 4px 14px;font-size:15px;color:#333;margin:6px 0 10px}
+  .tag{display:inline-block;align-self:flex-start;background:var(--chip);color:var(--navy);font-size:10px;letter-spacing:.6px;text-transform:uppercase;padding:3px 8px;border-radius:4px;margin-bottom:14px;font-weight:600}
+  .cols{display:flex;gap:16px}
+  .card{flex:1;border-radius:6px;padding:14px 16px;color:#fff}
+  .card.c1{background:var(--cyan)} .card.c2{background:var(--teal)}
+  .card .k{font-size:14px;opacity:.9;margin-bottom:6px}
+  .card .v{font-size:46px;font-weight:300;line-height:1}
+  .card .d{font-size:12.5px;margin-top:8px;opacity:.95}
+  .tile{flex:1;border:1px solid #bfe3f5;border-left:4px solid var(--cyan);border-radius:5px;padding:12px 14px;font-size:14px;line-height:1.35}
+  .tile b{display:block;font-size:15.5px;margin-bottom:3px}
+  /* cover */
+  .cover{padding:0;display:flex;flex-direction:row;justify-content:flex-start}
+  .cover .l{flex:1.6;padding:40px 40px 40px 56px;display:flex;flex-direction:column;justify-content:center}
+  .cover .r{flex:1;background:#d9eef9;display:flex;align-items:center;justify-content:center}
+  .cover .r img{width:84%}
+  .cover .q{font-size:30px;font-weight:300;margin-bottom:18px}
+  .cover .t{font-size:46px;font-weight:300;line-height:1.12;margin-bottom:18px}
+  .cover .st{font-size:28px;font-weight:300;line-height:1.25}
+  .big{font-size:40px;font-weight:300;line-height:1.15;margin-top:10px}
+  .flow{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin:6px 0 16px;font-size:14px}
+  .flow span{background:var(--chip);color:var(--navy);padding:5px 9px;border-radius:4px;font-weight:600}
+  .flow i{color:#9aa1a9;font-style:normal}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:6px 0 12px}
+</style>
+</head>
+<body>
+
+<!-- 1 · Portada -->
+<section class="s cover">
+  <div class="l">
+    <div class="tag">Clase 5 · Maestría en Fintech · ITBA · 2026</div>
+    <div class="q">¿Cuánto vendimos, de verdad?</div>
+    <div class="t">Programación para el Análisis de Datos</div>
+    <div class="st">Datos reales = datos sucios</div>
+  </div>
+  <div class="r"><img src="itba_logo.png" alt="ITBA"></div>
+</section>
+
+<!-- 2 · Agenda -->
+<section class="s">
+  <h1>Agenda de hoy</h1>
+  <table>
+    <tr><th style="width:90px">Hora</th><th>Bloque</th><th style="width:90px">Tiempo</th></tr>
+    <tr><td>19:00</td><td>Apertura y recap de la Clase 4</td><td>10'</td></tr>
+    <tr class="hl"><td>19:10</td><td>Datos sucios: el concepto antes que el código</td><td>25'</td></tr>
+    <tr class="hl"><td>19:35</td><td>Práctica guiada: la resolvemos juntos</td><td>75'</td></tr>
+    <tr class="hl"><td>20:50</td><td>Corte</td><td>10'</td></tr>
+    <tr class="hl"><td>21:00</td><td>Práctica individual: la resolvés vos, con Gemini</td><td>50'</td></tr>
+    <tr><td>21:50</td><td>Puesta en común y cierre</td><td>10'</td></tr>
+  </table>
+  <div class="quote">Misma forma que las clases anteriores: teoría, guiada, individual.</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">2</div>
+</section>
+
+<!-- 3 · Dónde estamos -->
+<section class="s">
+  <h1>Dónde estamos</h1>
+  <table>
+    <tr><th style="width:80px">Clase</th><th>Tabla</th><th>La pregunta</th></tr>
+    <tr><td>2</td><td>clientes</td><td>¿Quién se va?</td></tr>
+    <tr><td>3</td><td>transacciones</td><td>¿Cuánto se gasta, y cuándo?</td></tr>
+    <tr><td>4</td><td>las tres, cruzadas</td><td>¿Quiénes son los que se van?</td></tr>
+    <tr class="hl"><td>5</td><td>transacciones, como llegan</td><td>¿Le podemos creer al número?</td></tr>
+  </table>
+  <p>Hasta hoy, todas las claves coincidían y no faltaba ningún dato. <b>Alguien ya había limpiado las tablas por ustedes.</b></p>
+  <div class="note">Las cuatro clases anteriores fueron la parte corta del trabajo.</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">3</div>
+</section>
+
+<!-- 4 · La pregunta de hoy -->
+<section class="s">
+  <h1>La pregunta de hoy</h1>
+  <p>El directorio pide el <b>TPV 2024</b> para el cierre. Hay dos números sobre la mesa:</p>
+  <div class="cols" style="margin:12px 0 16px">
+    <div class="card c2"><div class="k">La tabla conciliada de las clases 3 y 4</div><div class="v">$1.774 M</div></div>
+    <div class="card c1"><div class="k">El export del procesador, tal como llega</div><div class="v">$2.018 M</div></div>
+  </div>
+  <p>Mismo negocio, mismo año, mismos clientes. <b>244 millones de diferencia.</b></p>
+  <div class="note">¿Cuál mandás? ¿Y cómo lo defendés?</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">4</div>
+</section>
+
+<!-- 5 · Por qué se ensucian -->
+<section class="s">
+  <h1>Por qué los datos se ensucian</h1>
+  <p>No es que alguien haya hecho mal su trabajo. Es que <b>los datos pasan por muchas manos</b>:</p>
+  <ul>
+    <li><b>Carga manual:</b> alguien escribió "Bs As", otro "Buenos Aires", otro "CABA"</li>
+    <li><b>Migraciones:</b> se cambió de sistema y los datos viejos entraron como pudieron</li>
+    <li><b>Integraciones:</b> dos sistemas con formatos distintos, conectados a las apuradas</li>
+    <li><b>Cambios de negocio:</b> la categoría "Billetera" no existía en 2019</li>
+    <li><b>Fallas técnicas:</b> se cayó el proceso nocturno y ese día se cargó dos veces</li>
+  </ul>
+  <div class="note">Lo vimos en la Clase 4: ningún sistema se diseñó para tu análisis. Se diseñó para <b>operar</b>, y la operación tolera cosas que el análisis no.</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">5</div>
+</section>
+
+<!-- 6 · Seis dimensiones -->
+<section class="s" >
+  <h1 style="margin-bottom:12px">Las seis dimensiones de la calidad</h1>
+  <table style="font-size:14px">
+    <tr><th>Dimensión</th><th>La pregunta</th><th>Cómo se rompe</th></tr>
+    <tr><td><b>Completitud</b></td><td>¿Está el dato?</td><td>Nulos, campos vacíos</td></tr>
+    <tr><td><b>Unicidad</b></td><td>¿Está una sola vez?</td><td>Duplicados</td></tr>
+    <tr><td><b>Consistencia</b></td><td>¿Dice lo mismo en todos lados?</td><td>El saldo no coincide entre sistemas</td></tr>
+    <tr><td><b>Validez</b></td><td>¿Respeta el formato y el rango?</td><td>Un monto negativo, un CUIT de 8 dígitos</td></tr>
+    <tr><td><b>Exactitud</b></td><td>¿Refleja la realidad?</td><td>El domicilio quedó viejo</td></tr>
+    <tr><td><b>Oportunidad</b></td><td>¿Llega a tiempo?</td><td>El cierre llega tres días tarde</td></tr>
+  </table>
+  <div class="note" style="font-size:14px"><b>Exactitud es la más peligrosa.</b> Un dato puede estar completo, ser único, válido y consistente, y aun así estar mal. Ningún código lo detecta: la pregunta <b>"¿este número tiene sentido?"</b> la contesta una persona que conoce el negocio.</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">6</div>
+</section>
+
+<!-- 7 · Ningún dato es crudo -->
+<section class="s">
+  <h1>Ningún dato es crudo</h1>
+  <p>Todo dataset ya pasó por decisiones de alguien: qué se guardó, qué se descartó, cómo se categorizó, qué se consideró un error.</p>
+  <p>Cuando limpiás, <b>agregás una capa más de decisiones</b>. El objetivo no es "dejar los datos objetivos", porque eso no existe. El objetivo es:</p>
+  <div class="grid3">
+    <div class="tile"><b>Defendibles</b>Decisiones que puedas explicar con el negocio, no con el código</div>
+    <div class="tile"><b>Documentadas</b>Para que otro pueda reconstruir el camino, y decidir distinto</div>
+    <div class="tile"><b>Medidas</b>Saber cuánto movió el número cada una</div>
+  </div>
+  <img class="logo" src="itba_logo.png"><div class="pg">7</div>
+</section>
+
+<!-- 8 · Nulos -->
+<section class="s">
+  <h1>Nulos: la decisión no es técnica</h1>
+  <table>
+    <tr><th>Opción</th><th>Cuándo</th><th>Qué cuesta</th></tr>
+    <tr><td><b>Eliminar</b></td><td>El dato es imprescindible para la pregunta</td><td>Perdés filas, y si es un total, plata</td></tr>
+    <tr><td><b>Imputar</b></td><td>Podés estimarlo razonablemente</td><td>Inventás datos: se marca siempre</td></tr>
+    <tr><td><b>Dejar</b></td><td>La pregunta no necesita esa columna</td><td>Arrastrás el hueco</td></tr>
+  </table>
+  <p>Una compra <b>sin categoría</b> sirve para el TPV. Una compra <b>sin fecha</b> sirve para el total anual, pero no para la serie mensual.</p>
+  <div class="note"><b>La decisión depende de la pregunta, no del código.</b></div>
+  <img class="logo" src="itba_logo.png"><div class="pg">8</div>
+</section>
+
+<!-- 9 · Outliers -->
+<section class="s">
+  <h1>Outliers: ¿error o cliente grande?</h1>
+  <p>Una compra de $57 millones puede ser:</p>
+  <ul>
+    <li>Un <b>error de carga</b>: se comió la coma decimal</li>
+    <li>Un <b>dato de prueba</b> que se coló a producción</li>
+    <li><b>Una operación real</b> de un cliente corporativo</li>
+  </ul>
+  <p>Los tres se ven idénticos en un histograma. La pregunta útil no es <i>"¿es grande?"</i>, sino:</p>
+  <p class="big" style="font-size:30px;margin:4px 0 14px">¿Es normal <b style="font-weight:700">para este cliente</b>?</p>
+  <div class="note">Borrar outliers sin preguntar es la forma más rápida de sacar del análisis justo a tus mejores clientes.</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">9</div>
+</section>
+
+<!-- 10 · Real o ruido -->
+<section class="s">
+  <h1>¿Es real o es ruido?</h1>
+  <p>Limpiar no es solo sacar lo que está mal: también es <b>no creerle a lo que se ve raro por casualidad</b>.</p>
+  <p>¿Se acuerdan de la Clase 2? <b>Tucumán tenía 31% de churn</b>, el más alto de todas las provincias, pero con <b>45 clientes</b>.</p>
+  <div class="cols" style="margin:8px 0 16px">
+    <div class="card c1"><div class="k">Con 45 clientes, una baja mueve la tasa</div><div class="v">2,2 pts</div></div>
+    <div class="card c2"><div class="k">Con 400 clientes, la misma baja la mueve</div><div class="v">0,25 pts</div></div>
+  </div>
+  <div class="note"><b>Antes de reaccionar a una diferencia, mirá sobre cuántos casos está calculada.</b> Una tasa alta sobre una base chica suele ser ruido, no señal.</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">10</div>
+</section>
+
+<!-- 11 · Herramientas -->
+<section class="s" >
+  <h1 style="margin-bottom:12px">Las herramientas de hoy</h1>
+  <table style="font-size:14px">
+    <tr><th>Pregunta</th><th>Herramienta</th><th>En Excel era</th></tr>
+    <tr><td>¿Dónde faltan datos?</td><td><code>isna().sum()</code></td><td>Filtrar las celdas vacías</td></tr>
+    <tr><td>¿Hay filas repetidas?</td><td><code>duplicated()</code></td><td>Quitar duplicados</td></tr>
+    <tr><td>¿El texto dice lo mismo?</td><td><code>str.strip()</code> · <code>str.capitalize()</code></td><td>ESPACIOS · NOMPROPIO</td></tr>
+    <tr><td>¿Este monto es raro?</td><td><code>quantile()</code> · <code>transform('median')</code></td><td>PERCENTIL</td></tr>
+    <tr><td>Completar lo que falta</td><td><code>fillna()</code></td><td>Reemplazar</td></tr>
+  </table>
+  <p style="margin-bottom:6px"><b>Dos criterios que valen más que la sintaxis:</b></p>
+  <ul style="margin-bottom:0">
+    <li><b>Diagnóstico antes que limpieza.</b> Siempre el mismo checklist, siempre primero</li>
+    <li><b>Contá las filas antes y después de cada paso.</b> Un filtro inocente puede borrar miles sin avisar</li>
+  </ul>
+  <img class="logo" src="itba_logo.png"><div class="pg">11</div>
+</section>
+
+<!-- 12 · Práctica guiada -->
+<section class="s">
+  <h2 style="color:var(--muted)">Práctica guiada</h2>
+  <p class="big" style="margin:0 0 16px">Vamos a la notebook —<br>Clase_5_Practica_Guiada.ipynb</p>
+  <p><b>¿Cuánto vendimos, de verdad?</b> El recorrido:</p>
+  <div class="flow">
+    <span>El número del lunes</span><i>→</i><span>El checklist</span><i>→</i><span>Duplicados</span><i>→</i><span>Texto</span><i>→</i><span>Montos imposibles</span><i>→</i><span>Nulos</span><i>→</i><span>Tres analistas, un archivo</span><i>→</i><span>La bitácora</span>
+  </div>
+  <div class="note">Para quedarte con tu trabajo: Archivo → Guardar una copia en Drive → Clase5_Guiada_TuNombre</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">12</div>
+</section>
+
+<!-- 13 · Práctica individual -->
+<section class="s" >
+  <h2 style="color:var(--muted);margin-bottom:6px">Práctica individual</h2>
+  <p class="big" style="margin:0 0 10px;font-size:32px">Clase_5_Practica_Individual.ipynb</p>
+  <p style="font-size:13.5px">Guardá tu copia para poder terminarla en casa: <b>Clase5_Individual_TuNombre</b>. <b>10 ejercicios</b>, del diagnóstico a la herramienta:</p>
+  <div class="grid3" style="grid-template-columns:repeat(3,1fr)">
+    <div class="tile"><b>1 a 4</b>Diagnosticar: nulos, texto, montos negativos</div>
+    <div class="tile"><b>5</b>Validar montos contra el límite de la tarjeta</div>
+    <div class="tile"><b>6</b>El precio de imputar</div>
+    <div class="tile"><b>7 y 8</b>Cuánto cambia el resultado, antes y después</div>
+    <div class="tile"><b>9</b>¿Las tablas cierran entre sí?</div>
+    <div class="tile"><b>10 · Desafío</b><code>reporte_calidad(df)</code>: una herramienta para el lunes</div>
+  </div>
+  <div class="note" style="font-size:14px">Antes de borrar, preguntá qué es · contá las filas · cada ejercicio cierra con su lectura de negocio · Gemini es copiloto, no piloto.</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">13</div>
+</section>
+
+<!-- 14 · Para llevarse -->
+<section class="s">
+  <h1>Para llevarse</h1>
+  <div class="grid3">
+    <div class="tile"><b>El dato limpio no existe</b>Limpiar es parte del análisis, no un paso previo</div>
+    <div class="tile"><b>Diagnóstico antes que limpieza</b>Siempre el mismo checklist</div>
+    <div class="tile"><b>Un nulo es una decisión de negocio</b>Depende de la pregunta</div>
+    <div class="tile"><b>Un outlier puede ser tu mejor cliente</b>Preguntá antes de borrar</div>
+    <div class="tile"><b>Toda limpieza mueve el número</b>Por eso se documenta</div>
+  </div>
+  <img class="logo" src="itba_logo.png"><div class="pg">14</div>
+</section>
+
+<!-- 15 · Próxima clase -->
+<section class="s">
+  <h1>Próxima clase: el cierre</h1>
+  <p><b>Clase 6</b>: examen integrador y qué sigue después del curso.</p>
+  <div class="note">Todo lo que vimos en cinco clases: leer un output, elegir el join, decidir qué hacer con un nulo, interpretar un gráfico.</div>
+  <p class="big" style="margin-top:26px">No se evalúa escribir código de memoria:<br>se evalúa el criterio.</p>
+  <div style="position:absolute;left:52px;bottom:40px;right:52px;border-top:1px solid #333;padding-top:8px"><span class="tag" style="margin:0">Maestría en Fintech · ITBA · 2026</span></div>
+  <img class="logo" src="itba_logo.png" style="display:none">
+</section>
+
+</body>
+</html>

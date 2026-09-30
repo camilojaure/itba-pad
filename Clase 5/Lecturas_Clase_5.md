@@ -20,6 +20,7 @@ Qué leer para acompañar la clase. Las dos primeras son de la bibliografía obl
 🔗 https://jakevdp.github.io/PythonDataScienceHandbook/03.04-missing-values.html
 
 - Explica cómo representa pandas los datos faltantes (`NaN`, `None`) y por qué una suma "ignora" los nulos sin avisar
+- **Opcional:** [*Vectorized String Operations*](https://jakevdp.github.io/PythonDataScienceHandbook/03.10-working-with-strings.html), para normalizar texto
 - La versión web gratuita corresponde a la 1ra edición; el capítulo es el mismo en la 2da (2023)
 
 ---

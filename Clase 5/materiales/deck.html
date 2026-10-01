@@ -15,7 +15,9 @@
   .s{width:960px;height:540px;position:relative;overflow:hidden;page-break-after:always;padding:36px 56px 40px;display:flex;flex-direction:column;justify-content:center}
   .s:last-child{page-break-after:auto}
   .logo{position:absolute;left:18px;bottom:12px;width:44px;opacity:.95}
-  .pg{position:absolute;right:22px;bottom:14px;font-size:10px;color:#9aa1a9}
+  .pg{position:absolute;right:24px;bottom:14px;font-size:11px;color:#5b6470;letter-spacing:.2px}
+  .pg span{color:#9aa1a9;margin-left:8px;padding-left:8px;border-left:1px solid #d5d9de}
+  .author-cover{position:absolute;left:56px;bottom:30px;font-size:14px;color:#5b6470;letter-spacing:.3px}
   h1{font-weight:300;font-size:40px;line-height:1.12;margin-bottom:18px;letter-spacing:-.2px}
   h2{font-weight:300;font-size:22px;margin-bottom:12px}
   p{font-size:17px;line-height:1.45;margin-bottom:10px}
@@ -42,7 +44,7 @@
   .tile b{display:block;font-size:15.5px;margin-bottom:3px}
   /* cover */
   .cover{padding:0;display:flex;flex-direction:row;justify-content:flex-start}
-  .cover .l{flex:1.6;padding:40px 40px 40px 56px;display:flex;flex-direction:column;justify-content:center}
+  .cover .l{position:relative;flex:1.6;padding:40px 40px 40px 56px;display:flex;flex-direction:column;justify-content:center}
   .cover .r{flex:1;background:#d9eef9;display:flex;align-items:center;justify-content:center}
   .cover .r img{width:84%}
   .cover .q{font-size:30px;font-weight:300;margin-bottom:18px}
@@ -64,6 +66,7 @@
     <div class="q">¿Cuánto vendimos, de verdad?</div>
     <div class="t">Programación para el Análisis de Datos</div>
     <div class="st">Datos reales = datos sucios</div>
+    <div class="author-cover">Camilo Jaureguiberry</div>
   </div>
   <div class="r"><img src="itba_logo.png" alt="ITBA"></div>
 </section>
@@ -81,7 +84,7 @@
     <tr><td>21:50</td><td>Puesta en común y cierre</td><td>10'</td></tr>
   </table>
   <div class="quote">Misma forma que las clases anteriores: teoría, guiada, individual.</div>
-  <img class="logo" src="itba_logo.png"><div class="pg">2</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">Camilo Jaureguiberry<span>2</span></div>
 </section>
 
 <!-- 3 · Dónde estamos -->
@@ -96,7 +99,7 @@
   </table>
   <p>Hasta hoy, todas las claves coincidían y no faltaba ningún dato. <b>Alguien ya había limpiado las tablas por ustedes.</b></p>
   <div class="note">Las cuatro clases anteriores fueron la parte corta del trabajo.</div>
-  <img class="logo" src="itba_logo.png"><div class="pg">3</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">Camilo Jaureguiberry<span>3</span></div>
 </section>
 
 <!-- 4 · La pregunta de hoy -->
@@ -109,7 +112,7 @@
   </div>
   <p>Mismo negocio, mismo año, mismos clientes. <b>244 millones de diferencia.</b></p>
   <div class="note">¿Cuál mandás? ¿Y cómo lo defendés?</div>
-  <img class="logo" src="itba_logo.png"><div class="pg">4</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">Camilo Jaureguiberry<span>4</span></div>
 </section>
 
 <!-- 5 · Por qué se ensucian -->
@@ -124,7 +127,7 @@
     <li><b>Fallas técnicas:</b> se cayó el proceso nocturno y ese día se cargó dos veces</li>
   </ul>
   <div class="note">Lo vimos en la Clase 4: ningún sistema se diseñó para tu análisis. Se diseñó para <b>operar</b>, y la operación tolera cosas que el análisis no.</div>
-  <img class="logo" src="itba_logo.png"><div class="pg">5</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">Camilo Jaureguiberry<span>5</span></div>
 </section>
 
 <!-- 6 · Seis dimensiones -->
@@ -140,7 +143,7 @@
     <tr><td><b>Oportunidad</b></td><td>¿Llega a tiempo?</td><td>El cierre llega tres días tarde</td></tr>
   </table>
   <div class="note" style="font-size:14px"><b>Exactitud es la más peligrosa.</b> Un dato puede estar completo, ser único, válido y consistente, y aun así estar mal. Ningún código lo detecta: la pregunta <b>"¿este número tiene sentido?"</b> la contesta una persona que conoce el negocio.</div>
-  <img class="logo" src="itba_logo.png"><div class="pg">6</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">Camilo Jaureguiberry<span>6</span></div>
 </section>
 
 <!-- 7 · Ningún dato es crudo -->
@@ -153,7 +156,7 @@
     <div class="tile"><b>Documentadas</b>Para que otro pueda reconstruir el camino, y decidir distinto</div>
     <div class="tile"><b>Medidas</b>Saber cuánto movió el número cada una</div>
   </div>
-  <img class="logo" src="itba_logo.png"><div class="pg">7</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">Camilo Jaureguiberry<span>7</span></div>
 </section>
 
 <!-- 8 · Nulos -->
@@ -167,7 +170,7 @@
   </table>
   <p>Una compra <b>sin categoría</b> sirve para el TPV. Una compra <b>sin fecha</b> sirve para el total anual, pero no para la serie mensual.</p>
   <div class="note"><b>La decisión depende de la pregunta, no del código.</b></div>
-  <img class="logo" src="itba_logo.png"><div class="pg">8</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">Camilo Jaureguiberry<span>8</span></div>
 </section>
 
 <!-- 9 · Outliers -->
@@ -182,7 +185,7 @@
   <p>Los tres se ven idénticos en un histograma. La pregunta útil no es <i>"¿es grande?"</i>, sino:</p>
   <p class="big" style="font-size:30px;margin:4px 0 14px">¿Es normal <b style="font-weight:700">para este cliente</b>?</p>
   <div class="note">Borrar outliers sin preguntar es la forma más rápida de sacar del análisis justo a tus mejores clientes.</div>
-  <img class="logo" src="itba_logo.png"><div class="pg">9</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">Camilo Jaureguiberry<span>9</span></div>
 </section>
 
 <!-- 10 · Real o ruido -->
@@ -195,7 +198,7 @@
     <div class="card c2"><div class="k">Con 400 clientes, la misma baja la mueve</div><div class="v">0,25 pts</div></div>
   </div>
   <div class="note"><b>Antes de reaccionar a una diferencia, mirá sobre cuántos casos está calculada.</b> Una tasa alta sobre una base chica suele ser ruido, no señal.</div>
-  <img class="logo" src="itba_logo.png"><div class="pg">10</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">Camilo Jaureguiberry<span>10</span></div>
 </section>
 
 <!-- 11 · Herramientas -->
@@ -214,7 +217,7 @@
     <li><b>Diagnóstico antes que limpieza.</b> Siempre el mismo checklist, siempre primero</li>
     <li><b>Contá las filas antes y después de cada paso.</b> Un filtro inocente puede borrar miles sin avisar</li>
   </ul>
-  <img class="logo" src="itba_logo.png"><div class="pg">11</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">Camilo Jaureguiberry<span>11</span></div>
 </section>
 
 <!-- 12 · Práctica guiada -->
@@ -226,7 +229,7 @@
     <span>El número del lunes</span><i>→</i><span>El checklist</span><i>→</i><span>Duplicados</span><i>→</i><span>Texto</span><i>→</i><span>Montos imposibles</span><i>→</i><span>Nulos</span><i>→</i><span>Tres analistas, un archivo</span><i>→</i><span>La bitácora</span>
   </div>
   <div class="note">Para quedarte con tu trabajo: Archivo → Guardar una copia en Drive → Clase5_Guiada_TuNombre</div>
-  <img class="logo" src="itba_logo.png"><div class="pg">12</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">Camilo Jaureguiberry<span>12</span></div>
 </section>
 
 <!-- 13 · Práctica individual -->
@@ -243,7 +246,7 @@
     <div class="tile"><b>10 · Desafío</b><code>reporte_calidad(df)</code>: una herramienta para el lunes</div>
   </div>
   <div class="note" style="font-size:14px">Antes de borrar, preguntá qué es · contá las filas · cada ejercicio cierra con su lectura de negocio · Gemini es copiloto, no piloto.</div>
-  <img class="logo" src="itba_logo.png"><div class="pg">13</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">Camilo Jaureguiberry<span>13</span></div>
 </section>
 
 <!-- 14 · Para llevarse -->
@@ -256,7 +259,7 @@
     <div class="tile"><b>Un outlier puede ser tu mejor cliente</b>Preguntá antes de borrar</div>
     <div class="tile"><b>Toda limpieza mueve el número</b>Por eso se documenta</div>
   </div>
-  <img class="logo" src="itba_logo.png"><div class="pg">14</div>
+  <img class="logo" src="itba_logo.png"><div class="pg">Camilo Jaureguiberry<span>14</span></div>
 </section>
 
 <!-- 15 · Próxima clase -->
@@ -266,7 +269,7 @@
   <div class="note">Todo lo que vimos en cinco clases: leer un output, elegir el join, decidir qué hacer con un nulo, interpretar un gráfico.</div>
   <p class="big" style="margin-top:26px">No se evalúa escribir código de memoria:<br>se evalúa el criterio.</p>
   <div style="position:absolute;left:52px;bottom:40px;right:52px;border-top:1px solid #333;padding-top:8px"><span class="tag" style="margin:0">Maestría en Fintech · ITBA · 2026</span></div>
-  <img class="logo" src="itba_logo.png" style="display:none">
+  <div class="pg">Camilo Jaureguiberry<span>15</span></div>
 </section>
 
 </body>

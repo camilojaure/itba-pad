@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>PAD · Clase N · Título</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<!--
+  PLANTILLA DE DECK — formato propio (Camilo Jaureguiberry)
+  ----------------------------------------------------------
+  · Copiá este archivo y el logo a la carpeta de la clase (p. ej. "Clase 6/materiales/deck.html").
+  · Cada <section class="s"> es una slide de 960×540. Borrá los layouts que no uses y duplicá los que sí.
+  · El pie (logo ITBA abajo a la izquierda, nombre + número abajo a la derecha) y el nombre en la portada
+    (abajo a la izquierda) los agrega el script del final. No hace falta escribirlos a mano.
+  · Para generar el PDF:  python3 render.py deck.html  → deck.pdf (+ aviso si alguna slide se desborda).
+  · Reglas de contenido: ver README.md de esta carpeta.
+-->
+<style>
+  @page { size: 960px 540px; margin: 0; }
+  :root{
+    --ink:#1b1f24; --muted:#5b6470; --line:#c9ced4; --navy:#0f4c81; --cyan:#1aa6e0;
+    --teal:#2f5c6e; --chip:#dff1fb; --yellow:#fbf1b3; --yellow-ink:#8a6d00; --code:#eef0f2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Nunito Sans',sans-serif;color:var(--ink);background:#fff}
+  .s{width:960px;height:540px;position:relative;overflow:hidden;page-break-after:always;padding:36px 56px 40px;display:flex;flex-direction:column;justify-content:center}
+  .s:last-child{page-break-after:auto}
+  .logo{position:absolute;left:18px;bottom:12px;width:44px;opacity:.95}
+  /* pie automático */
+  .pg{position:absolute;right:24px;bottom:14px;font-size:11px;color:#5b6470;letter-spacing:.2px}
+  .pg span{color:#9aa1a9;margin-left:8px;padding-left:8px;border-left:1px solid #d5d9de}
+  .author-cover{position:absolute;left:56px;bottom:30px;font-size:14px;color:#5b6470;letter-spacing:.3px}
+  h1{font-weight:300;font-size:40px;line-height:1.12;margin-bottom:18px;letter-spacing:-.2px}
+  h2{font-weight:300;font-size:22px;margin-bottom:12px}
+  p{font-size:17px;line-height:1.45;margin-bottom:10px}
+  ul{margin:4px 0 12px 0;list-style:none}
+  li{font-size:16.5px;line-height:1.4;margin-bottom:7px;padding-left:18px;position:relative}
+  li:before{content:"";position:absolute;left:2px;top:9px;width:7px;height:7px;border-radius:2px;background:var(--cyan)}
+  code{font-family:'JetBrains Mono',monospace;font-size:12.5px;background:var(--code);padding:1px 5px;border-radius:4px}
+  table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:6px;margin:4px 0 14px;font-size:15px}
+  th,td{text-align:left;padding:9px 14px;border-bottom:1px solid var(--line)}
+  th{font-weight:700}
+  tr:last-child td{border-bottom:none}
+  tr.hl td{font-weight:700}
+  .note{background:var(--yellow);border-radius:6px;padding:12px 16px 12px 42px;font-size:15px;line-height:1.45;position:relative;margin-top:6px}
+  .note:before{content:"⚠";position:absolute;left:15px;top:10px;color:var(--yellow-ink);font-size:14px}
+  .quote{border-left:3px solid var(--cyan);padding:4px 0 4px 14px;font-size:15px;color:#333;margin:6px 0 10px}
+  .tag{display:inline-block;align-self:flex-start;background:var(--chip);color:var(--navy);font-size:10px;letter-spacing:.6px;text-transform:uppercase;padding:3px 8px;border-radius:4px;margin-bottom:14px;font-weight:600}
+  .cols{display:flex;gap:16px}
+  .card{flex:1;border-radius:6px;padding:14px 16px;color:#fff}
+  .card.c1{background:var(--cyan)} .card.c2{background:var(--teal)}
+  .card .k{font-size:14px;opacity:.9;margin-bottom:6px}
+  .card .v{font-size:46px;font-weight:300;line-height:1}
+  .card .d{font-size:12.5px;margin-top:8px;opacity:.95}
+  .tile{flex:1;border:1px solid #bfe3f5;border-left:4px solid var(--cyan);border-radius:5px;padding:12px 14px;font-size:14px;line-height:1.35}
+  .tile b{display:block;font-size:15.5px;margin-bottom:3px}
+  /* cover */
+  .cover{padding:0;display:flex;flex-direction:row;justify-content:flex-start}
+  .cover .l{position:relative;flex:1.6;padding:40px 40px 40px 56px;display:flex;flex-direction:column;justify-content:center}
+  .cover .r{flex:1;background:#d9eef9;display:flex;align-items:center;justify-content:center}
+  .cover .r img{width:84%}
+  .cover .q{font-size:30px;font-weight:300;margin-bottom:18px}
+  .cover .t{font-size:46px;font-weight:300;line-height:1.12;margin-bottom:18px}
+  .cover .st{font-size:28px;font-weight:300;line-height:1.25}
+  .big{font-size:40px;font-weight:300;line-height:1.15;margin-top:10px}
+  .flow{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin:6px 0 16px;font-size:14px}
+  .flow span{background:var(--chip);color:var(--navy);padding:5px 9px;border-radius:4px;font-weight:600}
+  .flow i{color:#9aa1a9;font-style:normal}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:6px 0 12px}
+</style>
+</head>
+<body data-autor="Camilo Jaureguiberry" data-logo="itba_logo.png">
+
+<!-- LAYOUT · Portada. El nombre abajo a la izquierda se agrega solo. -->
+<section class="s cover">
+  <div class="l">
+    <div class="tag">Clase N · Maestría en Fintech · ITBA · 2026</div>
+    <div class="q">La pregunta de la clase, en una línea</div>
+    <div class="t">Programación para el Análisis de Datos</div>
+    <div class="st">Título temático de la clase</div>
+  </div>
+  <div class="r"><img src="itba_logo.png" alt="ITBA"></div>
+</section>
+
+<!-- LAYOUT · Agenda. Tabla con hora de reloj; las filas de los tres bloques en negrita (class="hl"). -->
+<section class="s">
+  <h1>Agenda de hoy</h1>
+  <table>
+    <tr><th style="width:90px">Hora</th><th>Bloque</th><th style="width:90px">Tiempo</th></tr>
+    <tr><td>19:00</td><td>Apertura y recap de la clase anterior</td><td>10'</td></tr>
+    <tr class="hl"><td>19:10</td><td>Tema: el concepto antes que el código</td><td>25'</td></tr>
+    <tr class="hl"><td>19:35</td><td>Práctica guiada: la resolvemos juntos</td><td>75'</td></tr>
+    <tr class="hl"><td>20:50</td><td>Corte</td><td>10'</td></tr>
+    <tr class="hl"><td>21:00</td><td>Práctica individual: la resolvés vos, con Gemini</td><td>50'</td></tr>
+    <tr><td>21:50</td><td>Puesta en común y cierre</td><td>10'</td></tr>
+  </table>
+  <div class="quote">Misma forma que las clases anteriores: teoría, guiada, individual.</div>
+</section>
+
+<!-- LAYOUT · Tabla + nota amarilla. El caballito de batalla: concepto en tabla y la idea fuerza en la nota. -->
+<section class="s">
+  <h1>Título de la slide</h1>
+  <p>Una frase de contexto, con <b>la parte importante en negrita</b>.</p>
+  <table>
+    <tr><th>Columna</th><th>Columna</th><th>Columna</th></tr>
+    <tr><td><b>Fila</b></td><td>Texto</td><td>Texto</td></tr>
+    <tr><td><b>Fila</b></td><td>Texto</td><td>Texto</td></tr>
+  </table>
+  <div class="note"><b>La idea que tiene que quedar.</b> Una o dos líneas, no más.</div>
+</section>
+
+<!-- LAYOUT · Bullets + nota. Máximo 5 bullets, cada uno con su etiqueta en negrita. -->
+<section class="s">
+  <h1>Título de la slide</h1>
+  <p>Frase introductoria:</p>
+  <ul>
+    <li><b>Etiqueta:</b> explicación corta</li>
+    <li><b>Etiqueta:</b> explicación corta</li>
+    <li><b>Etiqueta:</b> explicación corta</li>
+  </ul>
+  <div class="note">Cierre o pregunta para el grupo.</div>
+</section>
+
+<!-- LAYOUT · Dos cifras. Para contrastar dos números (c2 = azul petróleo, c1 = celeste). -->
+<section class="s">
+  <h1>La pregunta de hoy</h1>
+  <p>Contexto en una línea:</p>
+  <div class="cols" style="margin:12px 0 16px">
+    <div class="card c2"><div class="k">Qué mide la primera cifra</div><div class="v">$1.000 M</div></div>
+    <div class="card c1"><div class="k">Qué mide la segunda cifra</div><div class="v">$1.200 M</div></div>
+  </div>
+  <div class="note">¿Cuál mandás? ¿Y cómo lo defendés?</div>
+</section>
+
+<!-- LAYOUT · Grilla de tarjetas (3 columnas). Para "para llevarse" o para mapear ejercicios. -->
+<section class="s">
+  <h1>Para llevarse</h1>
+  <div class="grid3">
+    <div class="tile"><b>Idea 1</b>Una línea que la explica</div>
+    <div class="tile"><b>Idea 2</b>Una línea que la explica</div>
+    <div class="tile"><b>Idea 3</b>Una línea que la explica</div>
+    <div class="tile"><b>Idea 4</b>Una línea que la explica</div>
+    <div class="tile"><b>Idea 5</b>Una línea que la explica</div>
+  </div>
+</section>
+
+<!-- LAYOUT · Pase a la notebook. Recorrido en chips + el recordatorio de la copia. -->
+<section class="s">
+  <h2 style="color:var(--muted)">Práctica guiada</h2>
+  <p class="big" style="margin:0 0 16px">Vamos a la notebook —<br>Clase_N_Practica_Guiada.ipynb</p>
+  <p><b>La pregunta del caso.</b> El recorrido:</p>
+  <div class="flow">
+    <span>Paso 1</span><i>→</i><span>Paso 2</span><i>→</i><span>Paso 3</span><i>→</i><span>El remate</span>
+  </div>
+  <div class="note">Para quedarte con tu trabajo: Archivo → Guardar una copia en Drive → ClaseN_Guiada_TuNombre</div>
+</section>
+
+<!-- LAYOUT · Cierre. Frase grande + línea final. -->
+<section class="s">
+  <h1>Próxima clase: tema</h1>
+  <p><b>Clase N+1</b>: de qué se trata, en una línea.</p>
+  <p class="big" style="margin-top:26px">La frase con la que se van.</p>
+  <div style="position:absolute;left:52px;bottom:40px;right:52px;border-top:1px solid #333;padding-top:8px"><span class="tag" style="margin:0">Maestría en Fintech · ITBA · 2026</span></div>
+</section>
+
+<script>
+  // Pie automático: logo + "Nombre | n" en cada slide; en la portada, el nombre abajo a la izquierda.
+  (function () {
+    const autor = document.body.dataset.autor, logo = document.body.dataset.logo;
+    document.querySelectorAll('section.s').forEach((s, i) => {
+      if (s.classList.contains('cover')) {
+        const l = s.querySelector('.l');
+        if (l && !l.querySelector('.author-cover')) l.insertAdjacentHTML('beforeend', `<div class="author-cover">${autor}</div>`);
+        return;
+      }
+      if (!s.querySelector('.logo')) s.insertAdjacentHTML('beforeend', `<img class="logo" src="${logo}" alt="">`);
+      if (!s.querySelector('.pg')) s.insertAdjacentHTML('beforeend', `<div class="pg">${autor}<span>${i + 1}</span></div>`);
+    });
+  })();
+</script>
+</body>
+</html>
